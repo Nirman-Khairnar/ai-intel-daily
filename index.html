@@ -112,130 +112,151 @@ body {
 <body>
 <div class="header">
   <h1>🤖 AI Intel Daily</h1>
-  <div class="date">June 26, 2026 — NK's Operations</div>
+  <div class="date">2026-06-27 — NK's Operations</div>
 </div>
 
 <div class="lead">
-  <strong>Today's theme: The Agentic AI gold rush meets reality.</strong> Claude Code can now spin up 1,000 agents in a single workflow. Hermes Agent got a "Blank Slate" mode to build from scratch. GitHub Copilot switched to usage-based billing. And supply chain AI went from hype to "why AI alone isn't enough." The gap between what AI can do and what businesses actually capture is the story of this week.
+The AI stack is consolidating fast. This week: Anthropic launches Claude Opus 4.8 and Claude Tag, then <em>pauses</em> its own billing overhaul after user revolt. GitHub Copilot moves to AI Credits — metered cloud infrastructure, not a productivity add-on. The Great American AI Act drops as a 269-page bipartisan draft. And Hermes Agent gets a Blank Slate mode for builders who want control, not defaults. The pattern: every AI tool is deciding what it is — platform or utility — and the answer determines who pays.
 </div>
 
+<!-- TOOL UPDATES -->
 <div class="section">
-  <div class="section-title">🔧 Tool Updates</div>
+  <h2 class="section-title">🔧 Tool Updates</h2>
 
   <div class="card">
-    <h3><span class="tag update">UPDATE</span> Hermes Agent — Blank Slate Mode</h3>
-    <p>Nous Research shipped a new "Blank Slate" setup mode for Hermes Agent. Starts with just provider + model + file ops + terminal, then you build up with <code>hermes tools</code> or <code>hermes setup agent</code>. Perfect for teams who want a minimal agent without the default bloat. Also: Hermes Desktop (native desktop app) is now in public preview after being demoed at Jensen's GTC keynote.</p>
-    <a href="https://www.marktechpost.com/2026/06/20/nous-research-updates-hermes-agent-with-a-blank-slate-mode-that-pins-toolsets-via-platform_toolsets-cli-and-disabled-toolsets" target="_blank" class="source-link">MarkTechPost →</a>
-    <a href="https://github.com/NousResearch/hermes-agent/releases" target="_blank" class="source-link">GitHub Releases →</a>
+    <h3>Hermes Agent — Blank Slate Mode</h3>
+    <span class="tag update">update</span>
+    <p>Nous Research added a "Blank Slate" setup mode that boots the agent with everything off except provider, model, file ops, and terminal. Re-enable selectively with <code>hermes tools</code> or <code>hermes skills opt-in --sync</code>. For builders who want control from the ground up, not opinionated defaults.</p>
+    <a class="source-link" href="https://www.marktechpost.com/2026/06/20/nous-research-updates-hermes-agent-with-a-blank-slate-mode-that-pins-toolsets-via-platform_toolsets_cli-and-disabled_toolsets" target="_blank">MarkTechPost</a> ·
+    <a class="source-link" href="https://github.com/NousResearch/hermes-agent/releases" target="_blank">GitHub Releases</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag update">UPDATE</span> Claude Code — Dynamic Workflows</h3>
-    <p>Anthropic launched Dynamic Workflows in Claude Code (June 2). Claude now writes its own multi-agent harness on the fly — up to 1,000 agents per run. Six core patterns: Classify & Act, Fan Out & Synthesize, Adversarial Verification, Generate & Filter, Tournament, Loop Until Done. This is the orchestration layer that makes agentic AI actually usable for complex business tasks.</p>
-    <a href="https://www.developersdigest.tech/blog/claude-code-dynamic-workflows-guide" target="_blank" class="source-link">Developer's Digest →</a>
-    <a href="https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code" target="_blank" class="source-link">InfoQ →</a>
+    <h3>Claude Opus 4.8 + Claude Tag + Billing Pause</h3>
+    <span class="tag update">update</span>
+    <p>Anthropic shipped Claude Opus 4.8 (stronger coding, agentic tasks, long-running work), plus Claude Tag for content attribution. But the big story: Anthropic <strong>paused</strong> its June 15 plan to move Agent SDK/headless usage off subscription limits to separate API-credited billing — after user pushback. The credit overhaul is not happening. For now.</p>
+    <a class="source-link" href="https://www.anthropic.com/news" target="_blank">Anthropic Newsroom</a> ·
+    <a class="source-link" href="https://www.digitalapplied.com/blog/anthropic-claude-credit-overhaul-june-15-2026" target="_blank">Billing Pause Details</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag update">UPDATE</span> Claude — New Constitution Published</h3>
-    <p>Anthropic published a new constitution for Claude models (June 2026), evolving from standalone principles to a more comprehensive framework. Constitutional AI has been in use since 2023 but this revision reflects lessons from increasingly agentic deployments. Also: Claude Sonnet 4 and Opus 4 were deprecated on June 15, replaced by Sonnet 4.6 and Opus 4.6.</p>
-    <a href="https://www.anthropic.com/news/claude-new-constitution" target="_blank" class="source-link">Anthropic →</a>
-    <a href="https://help.make.com/anthropic-claude-model-deprecations-on-june-15-2026" target="_blank" class="source-link">Deprecation Notice →</a>
+    <h3>GitHub Copilot — AI Credits Replace Request Billing</h3>
+    <span class="tag update">update</span>
+    <p>Since June 1, Copilot has moved from Premium Request Units to usage-based billing built around GitHub AI Credits. Headline prices stay the same — but what those prices buy has changed, especially for agent mode and cloud agents. This is the clearest signal yet: AI coding assistants are metered infrastructure, not flat-rate productivity tools.</p>
+    <a class="source-link" href="https://windowsforum.com/threads/github-copilot-price-reset-june-1-2026-ai-credits-replace-request-billing.415582" target="_blank">WindowsForum</a> ·
+    <a class="source-link" href="https://releasebot.io/updates/github" target="_blank">GitHub Releasebot</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag update">UPDATE</span> GitHub Copilot — Usage-Based Billing Live</h3>
-    <p>As of June 1, 2026, GitHub Copilot moved from Premium Request Units to usage-based billing via GitHub AI Credits. Agent mode, code review, and long-running tasks now consume credits. Repository-level AGENTS.md support added. Code review also consumes Actions minutes. This signals AI coding assistants becoming metered cloud infrastructure, not flat-rate tools.</p>
-    <a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans" target="_blank" class="source-link">GitHub Blog →</a>
-    <a href="https://releasebot.io/updates/github" target="_blank" class="source-link">Releasebot →</a>
+    <h3>Cloudflare Workers AI — GLM-5.2, Kimi K2.7, Similarity Cache Controls</h3>
+    <span class="tag update">update</span>
+    <p>Cloudflare added Z.ai's GLM-5.2 agentic coding model and Moonshot's Kimi K2.7 Code to Workers AI. Also: configurable TTLs (10min–6days) for AI Search similarity cache freshness, with on-demand purge. Cost control for vector search at the edge just got real.</p>
+    <a class="source-link" href="https://developers.cloudflare.com/workers-ai/changelog" target="_blank">Workers AI Changelog</a> ·
+    <a class="source-link" href="https://releasebot.io/updates/cloudflare" target="_blank">Cloudflare Releasebot</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag update">UPDATE</span> Cloudflare — Granular Tunnel & Mesh Permissions</h3>
-    <p>Cloudflare added granular permissions for Tunnel instances and Mesh nodes (June 2026). Admins can now scope read/write access to specific private networking resources without account-wide control. Also: Workers AI added GLM-5.2 (262K context, reasoning support) and Kimi K2.6.</p>
-    <a href="https://releasebot.io/updates/cloudflare" target="_blank" class="source-link">Releasebot →</a>
-    <a href="https://developers.cloudflare.com/workers-ai/changelog" target="_blank" class="source-link">Workers AI Changelog →</a>
+    <h3>OpenRouter — One-Command OpenClaw Integration</h3>
+    <span class="tag update">update</span>
+    <p>OpenRouter now supports OpenClaw with single-command setup: unified billing, automatic provider failover, model fallbacks, and cost controls across 300+ models from 70+ providers. One key, one bill, and requests fail over to another provider automatically if the first is down.</p>
+    <a class="source-link" href="https://releasebot.io/updates/openrouter" target="_blank">OpenRouter Releasebot</a> ·
+    <a class="source-link" href="https://openrouter.ai/blog" target="_blank">OpenRouter Blog</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag update">UPDATE</span> OpenRouter — Gemini 3.1 Flash Image Models</h3>
-    <p>OpenRouter added Google's Nano Banana 2 and Nano Banana Pro (Gemini 3 Pro Image) on June 18. These support text I/O with 1M-token context windows, suited for long-horizon agent workflows and complex multi-step automation. OpenRouter now routes across 100+ models with smart fallbacks.</p>
-    <a href="https://openrouter.ai/models" target="_blank" class="source-link">OpenRouter Models →</a>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-title">🚀 AI Developments</div>
-
-  <div class="card">
-    <h3><span class="tag">DEVELOPMENT</span> PwC: "From Vibe to Value" — Agentic AI Orchestration</h3>
-    <p>PwC's 2026 AI predictions highlight that businesses are moving from "vibe coding" to disciplined orchestration. Key insight: you need tech teams to "industrialize" AI innovation with continuous monitoring. The new focus is on agent OS layers that bridge experimentation and production deployment. Agentic AI is driving radical transformation in marketing, operations, and compliance.</p>
-    <a href="https://www.pwc.com/us/en/tech-effect/ai-analytics/ai-predictions.html" target="_blank" class="source-link">PwC Predictions 2026 →</a>
-  </div>
-
-  <div class="card">
-    <h3><span class="tag">DEVELOPMENT</span> Upwork: SMB Leaders All-In on AI Agents, But Gains Are Incremental</h3>
-    <p>Upwork Research Institute Q1 2026 data shows SMB leaders are betting big on AI agents, but productivity gains remain incremental rather than transformative. The gap between adoption and transformation is the key challenge. Areas scaling: customer support, AI integration, automation, and custom AI-powered apps.</p>
-    <a href="https://www.upwork.com/resources/state-of-ai-in-smbs" target="_blank" class="source-link">Upwork Research →</a>
-  </div>
-
-  <div class="card">
-    <h3><span class="tag">DEVELOPMENT</span> BCG: "Why AI Alone Isn't Enough" for Supply Chain</h3>
-    <p>Boston Consulting Group's 2026 supply chain planning report (Feb 2026) delivers a sobering truth: most companies have invested in advanced planning systems and AI experiments, but few have translated those into consistent performance gains. The key insight — AI without work redesign and operating model change is wasted investment. Agentic AI in logistics remains a strategic imperative, but execution is everything.</p>
-    <a href="https://www.bcg.com/publications/2026/supply-chain-planning-why-ai-alone-isnt-enough" target="_blank" class="source-link">BCG Report →</a>
-  </div>
-
-  <div class="card">
-    <h3><span class="tag">DEVELOPMENT</span> SCMR: "2026 — The Age of the AI Supply Chain"</h3>
-    <p>Supply Chain Management Review declares 2026 as the year AI-powered supply chains become the norm. Key themes: AI requires work redesign (not just process automation), data discipline drives optimization ("Garbage In, AI Out"), and the shift from "AI readiness" to "AI execution" for Chief Supply Chain Officers.</p>
-    <a href="https://www.scmr.com/article/2026-the-age-of-the-ai-supply-chain" target="_blank" class="source-link">SCMR →</a>
+    <h3>n8n — SSRF Protection, MCP Workflow Tools, 1Password Secrets</h3>
+    <span class="tag update">update</span>
+    <p>n8n shipped a broad update with SSRF protection, 1Password external secrets integration, MCP workflow tools, cleaner credential handling, and improved Chat, Form, Slack, Notion, and Todoist node behavior. Security hardening plus more AI orchestration primitives — the platform is becoming infra, not just automation.</p>
+    <a class="source-link" href="https://releasebot.io/updates/n8n" target="_blank">n8n Releasebot</a>
   </div>
 </div>
 
+<!-- AI DEVELOPMENTS -->
 <div class="section">
-  <div class="section-title">💡 Business Opportunities</div>
+  <h2 class="section-title">🚀 AI Developments</h2>
 
   <div class="card">
-    <h3><span class="tag opportunity">OPPORTUNITY</span> AI Agents for SMB — The $100B Market Nobody Owns Yet</h3>
-    <p>2026 is the year every SMB gets their first AI agent. The difference between "using AI" and "using an AI Agent" is separating growing companies from stagnant ones. Opportunity: build vertical AI agents for logistics SMBs — lead qualification, shipment tracking, carrier selection, returns management. Wurthy's "Will" agent already handles this for small businesses. The play: domain-specific agents that learn your workflows.</p>
-    <a href="https://blog.wurthy.co/what-is-an-ai-agent-and-why-every-smb-will-have-one-by-2026" target="_blank" class="source-link">Wurthy →</a>
-    <a href="https://www.upwork.com/resources/state-of-ai-in-smbs" target="_blank" class="source-link">Upwork Data →</a>
+    <h3>Agentic AI Hits Double-Digit Efficiency Gains in Supply Chain</h3>
+    <span class="tag">ai</span>
+    <p>Organizations deploying agentic AI in supply chains are reporting double-digit efficiency gains and decision latency dropping from days to seconds. The Digital Supply Chain Twin (DSCT) is now critical for simulating tariff impacts, labor disruptions, and weather events. The insight: it's not AI replacing people — it's AI compressing the time between event and response.</p>
+    <a class="source-link" href="https://www.dataiku.com/stories/blog/supply-chain-ai-trends-2026" target="_blank">Dataiku</a> ·
+    <a class="source-link" href="https://www.inboundlogistics.com/articles/ai-in-supply-chain-management-how-useful-will-it-be-in-2026" target="_blank">Inbound Logistics</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag opportunity">OPPORTUNITY</span> YC-Backed Logistics AI Startups — Validation Signal</h3>
-    <p>Y Combinator's 2024-2025 batch includes multiple logistics AI startups: MarkIt (AI agents for trade workflows in Excel/PDFs), Trava (global trade compliance agents), Lighthouz AI (workflow automation), Vendra (sourcing automation), Soff (sales agents for distributors). The pattern: AI agents that slot into existing operator workflows, not replace them. This is exactly the Sellatica playbook.</p>
-    <a href="https://www.ycombinator.com/companies/industry/supply-chain" target="_blank" class="source-link">YC Supply Chain Startups →</a>
+    <h3>Microsoft Certifies Agentic AI Business Solutions Architects</h3>
+    <span class="tag">ai</span>
+    <p>Microsoft's new flagship expert-level certification — Agentic AI Business Solutions Architect (Exam AB-100) — is now live. Exams AB-620 and AB-250 hit beta in April and June 2026. This is the signal: agentic AI is no longer experimental. It's a certifiable enterprise role.</p>
+    <a class="source-link" href="https://techcommunity.microsoft.com/blog/skills-hub-blog/the-ai-job-boom-continues-build-the-skills-that-move-business-forward/4494139" target="_blank">Microsoft Tech Community</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag opportunity">OPPORTUNITY</span> Claude Code Dynamic Workflows as a Service</h3>
-    <p>Claude Code can now orchestrate 1,000 agents in a single run. But most businesses can't build these workflows. Opportunity: create pre-built "harness templates" for logistics operations — shipment audits, carrier performance analysis, inventory reconciliation. Sell these as Claude Code skills or workflow packages. Low cost to build, high value for operations teams.</p>
-    <a href="https://www.developersdigest.tech/blog/claude-code-dynamic-workflows-guide" target="_blank" class="source-link">Dynamic Workflows Guide →</a>
+    <h3>GPT-5.5 and Gemini 3.x: The Founder Model Stack Debate</h3>
+    <span class="tag">ai</span>
+    <p>New model releases are forcing a real decision: GPT-5.5 for premium general-purpose work, Gemini 3.x for multimodal and long-context, open models for cost control. The practical takeaway — split tasks by risk and value, test one workflow not one prompt, and put humans where judgment matters. Model selection is now an architecture decision, not a preference.</p>
+    <a class="source-link" href="https://blog.mean.ceo/new-ai-model-releases-news-june-2026" target="_blank">Mean CEO Blog</a>
   </div>
 </div>
 
+<!-- BUSINESS OPPORTUNITIES -->
 <div class="section">
-  <div class="section-title">⚠️ Watch Out</div>
+  <h2 class="section-title">💡 Business Opportunities</h2>
 
   <div class="card">
-    <h3><span class="tag risk">RISK</span> AI Security Risks — Data Leakage, Shadow AI, Deepfakes</h3>
-    <p>2026's top AI security risks: data leakage through AI tools, prompt injection attacks, shadow AI (unsanctioned employee usage), deepfake scams, and AI-powered phishing. As companies rapidly adopt generative AI, they're creating new cybersecurity and privacy risks many teams are unprepared for. Governance is no longer optional — it's survival infrastructure.</p>
-    <a href="https://meisteritsystems.com/news/top-ai-security-risks-every-business-must-prepare-for-in-2026" target="_blank" class="source-link">MeisterIT Systems →</a>
-    <a href="https://www.darktrace.com/resource/the-state-of-ai-cybersecurity-2026" target="_blank" class="source-link">Darktrace Report →</a>
+    <h3>Indian AI Startups: $679.8M in Q1 2026 — But Check the Distribution</h3>
+    <span class="tag opportunity">opportunity</span>
+    <p>India's AI startups raised $679.8M in Q1 2026, more than double the previous quarter. But $600M went to one company (Neysa). The real signal: VCs are writing bigger checks to fewer bets, and rewarding <strong>proprietary data, workflow integration, and distribution</strong> over model performance. If you're building in India, model performance is not your moat. Integration is.</p>
+    <a class="source-link" href="https://www.youtube.com/watch?v=7WczS_uRm1w" target="_blank">AIM Network Analysis</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag risk">RISK</span> US AI Regulation — State Laws Creating Compliance Patchwork</h3>
-    <p>No federal AI law, but state legislatures are filling the void. Colorado's SB 24-205 targets "high-risk" AI systems in hiring, housing, healthcare. NYC Local Law 144 covers automated employment decisions. Illinois, Maryland, New Jersey have hiring restrictions. The compliance picture is getting complicated fast for any business using AI in consequential decisions.</p>
-    <a href="https://verifywise.ai/blog/state-of-ai-governance-regulations-united-states-2026" target="_blank" class="source-link">VerifyWise Analysis →</a>
-    <a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security" target="_blank" class="source-link">White House Action →</a>
+    <h3>Supply Chain AI: The Integration Opportunity</h3>
+    <span class="tag opportunity">opportunity</span>
+    <p>IFS.ai Logistics launched integrated network intelligence connecting logistics planning, shipment execution, operational visibility, and cost control. Dataiku's report shows the real bottleneck isn't AI capability — it's "partner data chaos" and integration with existing systems. This is exactly where Sellatica plays: the value isn't the AI model, it's connecting ERPs properly so AI has clean data to work with.</p>
+    <a class="source-link" href="https://www.dataiku.com/stories/blog/supply-chain-ai-trends-2026" target="_blank">Dataiku Supply Chain Trends</a> ·
+    <a class="source-link" href="https://www.scmr.com/article/2026-the-age-of-the-ai-supply-chain" target="_blank">SCMR</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag risk">RISK</span> GitHub Copilot Pricing Shift — Token-Based Metering Is the New Normal</h3>
-    <p>The shift from flat-rate to usage-based billing across AI providers (GitHub Copilot, Claude, OpenAI Codex) means costs can spike unpredictably. Agent mode and long-running workflows consume credits fast. Budget controls and governance policies are now essential, not optional. For SMBs, this makes self-hosted/open-source alternatives (like Hermes Agent) more attractive.</p>
-    <a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans" target="_blank" class="source-link">GitHub Changelog →</a>
+    <h3>82% of SMBs Now Use AI — Marketing is #1 Use Case</h3>
+    <span class="tag opportunity">opportunity</span>
+    <p>SBE Council's 2026 survey: 82% of small business employers have invested in AI tools. Marketing is the top use case. Admin automation is the fastest-growing. The average SMB uses a median of 5 AI tools. Opportunity: SMBs have the tools but lack the <strong>integration</strong> between them. Someone needs to wire the stack together — that's where an automation partner wins.</p>
+    <a class="source-link" href="https://sbecouncil.org/2026/04/25/the-ai-tools-small-businesses-are-using" target="_blank">SBE Council</a>
+  </div>
+
+  <div class="card">
+    <h3>FreightWaves Supply Chain AI Symposium — Chicago, July 15</h3>
+    <span class="tag opportunity">opportunity</span>
+    <p>High-impact symposium on real-world AI in supply chains. The "AI Excellence in Supply Chain Award" will be presented live. Attendees learn where AI creates the most leverage and where human expertise remains irreplaceable. This is where logistics operators — not AI influencers — actually show up.</p>
+    <a class="source-link" href="https://live.freightwaves.com/supply-chain-ai-symposium-2026" target="_blank">FreightWaves Symposium</a>
+  </div>
+</div>
+
+<!-- WATCH OUT -->
+<div class="section">
+  <h2 class="section-title">⚠️ Watch Out</h2>
+
+  <div class="card">
+    <h3>The Great American AI Act — 269 Pages, Bipartisan, Controversial</h3>
+    <span class="tag risk">risk</span>
+    <p>Reps. Obernolte (R-CA) and Trahan (D-MA) released a draft of the first comprehensive federal AI governance regime. It would preempt state AI laws for 3 years, organize governance into Frontier AI, Workforce, Cybersecurity, and R&D titles. Civil society groups (Public Citizen, AFL-CIO, Public Knowledge) immediately opposed the preemption. This is going to be a fight — and the outcome determines who regulates your AI stack.</p>
+    <a class="source-link" href="https://techpolicy.press/unpacking-the-great-american-artificial-intelligence-act-of-2026" target="_blank">TechPolicy.Press</a> ·
+    <a class="source-link" href="https://www.gunder.com/en/news-insights/insights/2026-ai-laws-update-key-regulations-and-practical-guidance" target="_blank">Gunder AI Laws Update</a>
+  </div>
+
+  <div class="card">
+    <h3>87% of Leaders Flag AI Security as Fastest-Growing Cyber Risk</h3>
+    <span class="tag risk">risk</span>
+    <p>WEF Davos 2026: 87% of surveyed leaders identify AI-related vulnerabilities as the fastest-growing cyber risk. Organizations scaled generative AI 18-24 months faster than security governance could keep up. 65% of large orgs say third-party/supply chain vulnerabilities are their greatest resilience challenge. This is the gap: deployment velocity >> security maturity.</p>
+    <a class="source-link" href="https://www.forbes.com/sites/guneyyildiz/2026/01/22/the-ai-security-wake-up-call-ceos-didnt-budget-for--what-davos-2026-data-reveals" target="_blank">Forbes/WEF</a> ·
+    <a class="source-link" href="https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026" target="_blank">Intl AI Safety Report</a>
+  </div>
+
+  <div class="card">
+    <h3>Shadow Agents: The Governance Gap Nobody's Watching</h3>
+    <span class="tag risk">risk</span>
+    <p>Dataiku's supply chain report flags "Shadow Agents" — AI agents deployed without governance, visibility, or oversight. Traditional governance breaks down because agents don't follow rule-based boundaries. The fix isn't limiting AI — it's <strong>building visibility as a primitive</strong>. Human-in-the-loop must be a design choice, not an afterthought.</p>
+    <a class="source-link" href="https://www.dataiku.com/stories/blog/supply-chain-ai-trends-2026" target="_blank">Dataiku</a>
   </div>
 </div>
 
