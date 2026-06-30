@@ -112,43 +112,50 @@ body {
 <body>
 <div class="header">
   <h1>🤖 AI Intel Daily</h1>
-  <div class="date">2026-06-29 — NK's Operations</div>
+  <div class="date">2026-06-30 — NK's Operations</div>
 </div>
 
 <div class="lead">
-  <strong>Themes: EU simplifies AI Act, Anthropic IPO ripples, and every tool we use got a pricing facelift.</strong> The European Parliament voted 423-57 to delay high-risk AI enforcement to December 2027 — buy-your-time if you're building. Meanwhile Anthropic's confidential S-1 at $965B valuation signals the AI gold rush is entering its public markets phase. And across our stack — GitHub, Zapier, Anthropic, n8n — everything is repricing toward usage-based billing. Cavalry has eight weeks.</div>
+  <strong>Today's theme: The Open-Weight Inflection.</strong> DeepSeek V4 Flash goes free on OpenRouter, Hermes Agent hits 100K stars with a desktop app, and the EU AI Act's August 2 deadline is just 33 days away. The open-source AI stack is now production-grade — and the business implications are massive.
+</div>
 
 <div class="section">
   <div class="section-title">🔧 Tool Updates</div>
 
   <div class="card">
-    <h3><span class="tag update">PRICING</span> GitHub Copilot — Code Review Gets 20% Cheaper + Org Defaults</h3>
-    <p>GitHub updated Copilot Code Review on June 25, switching from custom file-exploration plumbing to built-in CLI tools (grep, rg, glob, view). Cost drops ~20%. Organization-level defaults now let admins set review depth across teams. Medium-depth labeling replaces vague tiers. This is GitHub treating AI review as standard infrastructure, not premium feature.</p>
-    <a class="source-link" href="https://windowsforum.com/threads/github-copilot-code-review-update-june-25-2026-20-cheaper-medium-labels-defaults.430683">GitHub Blog</a>
+    <h3><span class="tag update">UPDATE</span> Hermes Agent — Desktop App + 100K Stars</h3>
+    <p>Nous Research shipped the official Hermes Agent desktop app on June 2 (v0.15.2) with native builds for macOS, Windows, and Linux. The project crossed 100,000 GitHub stars — fastest-growing open-source agent framework of 2026. Recent releases include v2026.6.5, v2026.5.29, and v2026.5.28 in rapid succession.</p>
+    <a href="https://hermes-agent.nousresearch.com/desktop" class="source-link">Hermes Desktop Official Page</a> | <a href="https://github.com/NousResearch/hermes-agent" class="source-link">GitHub — 100K+ Stars</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag update">MODEL</span> Cloudflare Workers AI — GLM-5.2 + Kimi K2.7 Code Now Live</h3>
-    <p>Cloudflare added Z.ai's GLM-5.2 (flagship agentic coding model, 262K context, function calling, 40B active params from 744B total) and Moonshot's Kimi K2.7 Code (1T params, 32B active, MoE architecture, up to 260 tok/s). Both available via Workers AI binding immediately. The open-weight coding race is now running on edge infrastructure globally.</p>
-    <a class="source-link" href="https://developers.cloudflare.com/changelog/post/2026-06-16-glm-52-workers-ai">Cloudflare Docs</a> | <a class="source-link" href="https://regolo.ai/glm-5-2-vs-kimi-k2-7-code-the-definitive-guide-for-coding">Comparison</a>
+    <h3><span class="tag update">UPDATE</span> OpenRouter — DeepSeek V4 Flash Now Free + Open-Weight Model Rankings</h3>
+    <p>OpenRouter's June 2026 blog highlights four open-weight models that "matter most": DeepSeek V4 Flash (first to cross the agentic rubicon), GLM 5.2 (#1 open-weight on Artificial Analysis Intelligence Index), MiniMax M3 (multimodal long-context), and NVIDIA Nemotron 3 Ultra. DeepSeek V4 Flash is available free for limited time. OpenRouter's MCP server gives coding agents live model rankings, pricing, and benchmarks.</p>
+    <a href="https://openrouter.ai/blog/insights/the-open-weight-models-that-matter-june-2026" class="source-link">OpenRouter Blog — June 2026 Open-Weight Models</a> | <a href="https://releasebot.io/updates/openrouter" class="source-link">OpenRouter Release Notes</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag update">BILLING</span> Claude Code — June 15 Billing Change Is LIVE (Not Paused)</h3>
-    <p>Contrary to last week's bulletin — Anthropic's June 15 programmatic-usage credit IS now active for Agent SDK, headless claude -p, and GitHub Actions. Subscriptions effectively subsidized agent usage 15-30x vs API pricing. That subsidy is gone. If you're running Hermes Agent with Claude backend, your automated/cron usage now draws from a separate monthly credit billed at API rates. Direct API key = predictable per-token billing. Choose wisely.</p>
-    <a class="source-link" href="https://www.pravinkumar.co/blog/claude-june-15-billing-change-explained-2026">Pravin Kumar Analysis</a> | <a class="source-link" href="https://releasebot.io/updates/anthropic">Full Release Notes</a>
+    <h3><span class="tag update">UPDATE</span> Claude Code — Major Quality & Reliability Update (June 2026)</h3>
+    <p>Anthropic shipped a broad Claude Code update: fullscreen mouse click controls, voice dictation fixes, sandbox credential blocking, org model restrictions, /rewind support, better agent permissions, improved MCP resilience, lower CPU/memory during streaming, and remote session startup fixes. The June 15 billing change remains PAUSED (not live).</p>
+    <a href="https://releasebot.io/updates/anthropic" class="source-link">Anthropic Release Notes — June 2026</a> | <a href="https://releasebot.io/updates/anthropic/claude-code" class="source-link">Claude Code 377 Release Notes</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag update">REPORT</span> Zapier — 2026 AI Transformation Trends Report (June 24)</h3>
-    <p>Zapier dropped its annual AI Transformation Report positioning the platform as "business infrastructure" — not a simple connector. Key finding: AI by Zapier's model-based pricing (live June 15) means different AI tasks cost different amounts per model tier. They're pushing founders/freelancers toward multi-agent orchestration. Not a tool for SMBs anymore — it's positioning as enterprise middleware.</p>
-    <a class="source-link" href="https://blog.mean.ceo/zapier-news-june-2026">Startup Edition Analysis</a> | <a class="source-link" href="https://help.zapier.com/hc/en-us/articles/46597632373389-AI-by-Zapier-new-model-based-pricing-starting-June-15-2026">Zapier Docs</a>
+    <h3><span class="tag update">UPDATE</span> Cloudflare — Agents SDK Background Sub-Agents + Workers AI Expansion</h3>
+    <p>Cloudflare's Agents SDK now supports detached background sub-agent runs with live progress and durable milestones, a unified runTurn entry point, and major recovery improvements for chat agents. Workers AI added GLM-5.2 and Kimi K2.7 Code models. Cloudflare also acquired VoidZero (Vite/Vitest/Rolldown team) and is building AI Gateway as a unified inference layer across 14+ providers.</p>
+    <a href="https://releasebot.io/updates/cloudflare" class="source-link">Cloudflare Release Notes — June 2026</a> | <a href="https://developers.cloudflare.com/changelog/post/2026-06-16-glm-52-workers-ai" class="source-link">GLM-5.2 Workers AI Changelog</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag update">CANVAS</span> n8n — New Canvas UI, SSRF Protection, MCP Workflow Tools</h3>
-    <p>n8n shipped a spatial Canvas UI replacing the flat workflow builder (grouped node clusters). Added SSRF protection for HTTP Request nodes, 1Password external secrets integration, MCP workflow tools for agent-centric builds, plus GDPR-mode execution logging that masks PII. Community Edition vs Cloud gap narrows — most features now ported. Important for self-hosters: SSRF protection was critical.</p>
-    <a class="source-link" href="https://releasebot.io/updates/n8n">Full Release Notes</a> | <a class="source-link" href="https://www.softomatesolutions.com/blog/n8n-updates-2026-whats-new">2026 Feature Tracker</a>
+    <h3><span class="tag update">UPDATE</span> n8n — Rebuilt AI Agent Node + Canvas UI + GDPR Logging</h3>
+    <p>n8n's 2026 updates: rebuilt AI Agent node supporting tool calling across Claude, GPT-4o, Gemini 1.5 Pro, and Mistral; new Canvas UI replacing flat workflow builder; redesigned HTTP Request node with OAuth 2.0 PKCE flow; GDPR-mode execution logging that masks PII; and improved error handling with configurable retry delays.</p>
+    <a href="https://www.softomatesolutions.com/blog/n8n-updates-2026-whats-new" class="source-link">n8n 2026 Features Breakdown</a> | <a href="https://community.n8n.io/t/n8n-s-bold-new-updates-the-future-of-automation-is-here/184763" class="source-link">n8n Community Updates</a>
+  </div>
+
+  <div class="card">
+    <h3><span class="tag update">UPDATE</span> GitHub Copilot — Usage-Based Billing Now Live + Code Review 20% Cheaper</h3>
+    <p>GitHub Copilot moved to token-based AI Credits on June 1. Code Review got 20% cheaper on June 25 by switching to builtin CLI tools. Organization-level defaults let admins set review depth across teams. Community discussion shows frustration with the pricing shift, with many exploring local model alternatives via LM Studio + OpenRouter.</p>
+    <a href="https://github.com/orgs/community/discussions/192948" class="source-link">GitHub Copilot Usage-Based Billing Discussion</a> | <a href="https://enterprisedna.co/resources/news/github-copilot-usage-based-billing-enterprise-2026" class="source-link">Enterprise DNA Pricing Breakdown</a>
   </div>
 </div>
 
@@ -156,27 +163,27 @@ body {
   <div class="section-title">🚀 AI Developments</div>
 
   <div class="card">
-    <h3>EU AI Act Omnibus: Parliament Votes to Delay High-Risk Deadlines</h3>
-    <p>On June 16, the European Parliament voted 423-57 on Digital Omnibus amendments pushing high-risk AI compliance deadlines from August 2026 to December 2027 — and August 2028 for Annex I regulated products. Also: outright ban on AI generating nonconsensual intimate imagery, clarified rules for AI in industrial machinery, and carve-out for processing special category data for bias detection. The EU Council must sign off before August 2, but passage is expected. <strong>For Indian companies selling into EU:</strong> you now have 18 more months, but logging must be tamper-evident and reconstructable. Logging inputs/outputs alone is not enough.</p>
-    <a class="source-link" href="https://www.morganlewis.com/pubs/2026/06/eu-approves-delays-and-other-amendments-to-certain-eu-ai-act-obligations-what-businesses-should-know">Morgan Lewis Analysis</a> | <a class="source-link" href="https://ogletree.com/insights-resources/blog-posts/eu-ai-act-amended-parliament-votes-to-delay-key-deadlines">Ogletree Summary</a>
+    <h3>DeepSeek V4 Flash — 284B Params, 1M Token Context, Free on OpenRouter</h3>
+    <p>DeepSeek V4 Flash is a mixture-of-experts model (13B active from 284B total) with 1M-token context window — reads entire codebases in one pass. Available free on OpenRouter for limited time. Two modes: Thinking (hard problems) and Fast (quick wins). Rivals closed-source models on reasoning, STEM, coding, and agentic benchmarks. This is the first open-weight model to truly cross the "agentic rubicon."</p>
+    <a href="https://openrouter.ai/blog/insights/the-open-weight-models-that-matter-june-2026" class="source-link">OpenRouter — DeepSeek V4 Flash Analysis</a> | <a href="https://deepseek.ai/deepseek-v4-flash-review" class="source-link">DeepSeek V4 Flash Review</a>
   </div>
 
   <div class="card">
-    <h3>Anthropic S-1 at $965B Valuation — IPO Market Floodgates Open</h3>
-    <p>Anthropic confidentially filed its S-1 on June 1 at a $965 billion tracking valuation. Wedbush analysts call it "opening the floodgates" — with SpaceX also filing andKlarna waiting. Anthropic is racing toward first operating profit. The strategic signal: AI companies are going public while still burning capex because investors are pricing in 10-year horizons. This validates our "platform bet" thesis but also means every AI startup's 409A valuation just got a reality check.</p>
-    <a class="source-link" href="https://fortune.com/2026/06/01/anthropic-confidentially-files-ipo-965-billion-valuation">Fortune</a> | <a class="source-link" href="https://www.npr.org/2026/06/01/nx-s1-5843199/anthropic-ipo-filing-ai-large">NPR Coverage</a>
+    <h3>Anthropic IPO Filing — Confidential S-1 at $965B Valuation</h3>
+    <p>Anthropic confidentially filed its S-1 with the SEC on June 1, 2026, becoming the first major AI lab to formally begin the IPO process. Valuation sits at $965B following a $65B raise. Expected to be among three high-profile AI companies going public in 2026. This signals the AI industry's transition from "burning cash for growth" to "profitable public company" phase.</p>
+    <a href="https://www.npr.org/2026/06/01/nx-s1-5843199/anthropic-ipo-filing-ai-large" class="source-link">NPR — Anthropic IPO Filing</a> | <a href="https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html" class="source-link">CNBC — Anthropic S-1 Filing</a>
   </div>
 
   <div class="card">
-    <h3>DeepSeek V4 Model Name Migration Deadline: July 24, 2026</h3>
-    <p>DeepSeek-chat and deepseek-reasoner will be "fully retired and inaccessible" after July 24, 2026 at 15:59 UTC. Teams still using legacy IDs must migrate to deepseek-v4-pro or deepseek-v4-flash. One-line code change but testing integration-specific edge cases is where things break. If any Hermes Agent workflows reference legacy DeepSeek IDs, update them in the next 25 days.</p>
-    <a class="source-link" href="https://wavespeed.ai/blog/posts/blog-deepseek-v4-model-name-migration">Migration Guide</a> | <a class="source-link" href="https://explainx.ai/blog/deepseek-v4-preview-release-api-2026">V4 Deep Dive</a>
+    <h3>AI Agents Market — $12.06B in 2026, Projected $53.2B by 2030</h3>
+    <p>The AI agents market reached $12.06 billion in 2026 with a projected 44.9% CAGR to $53.2 billion by 2030. Blue Prism's 2026 report notes that "agentic automation will mark the true democratization of AI." Every company can now wield intelligence at scale — but only those with proper governance and orchestration will capture real value.</p>
+    <a href="https://blogs.workfx.ai/2026/05/12/best-ai-growth-agents-business-growth-2026" class="source-link">AI Agents Market Size 2026</a> | <a href="https://www.blueprism.com/resources/blog/future-ai-agents-trends" class="source-link">Blue Prism — AI Agent Trends 2026</a>
   </div>
 
   <div class="card">
-    <h3>Hermes Agent v0.16.0 — Fastest-Growing Open-Source Agent Hits 100K Stars</h3>
-    <p>Nous Research shipped Hermes Agent v0.16.0 (Surface Release) on June 5. The repo crossed 100,000 GitHub stars — fastest-growing open-source AI agent by Dealroom's count. Desktop app shipping (v0.15.2 public preview with native macOS/Windows/Linux builds). 180K+ stars total. For us this means: improvements compound weekly, community plugins are expanding, and the toolset we're building on is accelerating.</p>
-    <a class="source-link" href="https://hermes-ai.net/news">Release Tracker</a> | <a class="source-link" href="https://the-decoder.com/nous-research-releases-hermes-desktop-an-open-source-ai-agent-for-every-platform/">The Decoder</a>
+    <h3>Zapier AI Transformation — 80+ Free AI Agents + Model-Based Pricing</h3>
+    <p>Zapier now offers 80+ free AI agents customizable in plain English. AI by Zapier moved to model-based pricing on June 15 (different model tiers cost different amounts per task). Zapier is positioning as "business infrastructure" — workflows, AI tools, agents, chatbots, and access controls in one platform. Their 2026 AI Transformation Strategy is now public.</p>
+    <a href="https://help.zapier.com/hc/en-us/articles/46597632373389-AI-by-Zapier-new-model-based-pricing-starting-June-15-2026" class="source-link">Zapier AI Pricing Update</a> | <a href="https://zapier.com/resources/events/2026-ai-transformation" class="source-link">Zapier AI Transformation Strategy</a>
   </div>
 </div>
 
@@ -184,21 +191,21 @@ body {
   <div class="section-title">💡 Business Opportunities</div>
 
   <div class="card">
-    <h3><span class="tag opportunity">ARBITRAGE</span> EU AI Act Delay = 18-Month Consulting Window</h3>
-    <p>The moment deadlines moved from Aug 2026 to Dec 2027, a massive compliance consulting market opened. Indian IT services firms are already mobilizing. <strong>Opposition angle:</strong> EU-based SMBs exporting goods or services will need EU AI Act compliance documentation but won't build it in-house. If you sell into EU, you need Article 16 compliance docs. Sell compliance-as-a-service or partner with EU consultancies who need cost-effective delivery. Margins in regulatory consulting are 60%+.</p>
-    <a class="source-link" href="https://verifywise.ai/blog/eu-ai-act-omnibus-what-changed">New Deadline Map</a>
+    <h3><span class="tag opportunity">OPPORTUNITY</span> Open-Weight AI Stack for SMBs — Free Inference, Enterprise Quality</h3>
+    <p>DeepSeek V4 Flash (free on OpenRouter) + GLM 5.2 + n8n self-hosted + Cloudflare Workers AI = a production-grade AI automation stack at near-zero inference cost. For Indian SMBs and logistics operators, this means AI agent deployment without the $30-50/month per-seat cost of closed-source tools. The moat is orchestration, not model access.</p>
+    <a href="https://openrouter.ai/blog/insights/the-open-weight-models-that-matter-june-2026" class="source-link">OpenRouter — Free Model Rankings</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag opportunity">OPEN MODELS</span> Open-Weight Coding Models Are Commoditizing Agentic Development</h3>
-    <p>GLM-5.2 on Cloudflare (free), DeepSeek V4 Flash (free on OpenRouter), Gemma 4 31B (free) — the open-weight coding stack is now production-quality. <strong>The business angle:</strong> agents that used to require Claude/GPT can now run competitive coding tasks at zero model cost. Build agents for logistics operators, invoice parsing, route optimization using free models. Your moat is the workflow, not the model. This is the year to build vertical agents on free models and charge for the integration + uptime.</p>
-    <a class="source-link" href="https://openrouter.ai/blog/insights/the-open-weight-models-that-matter-june-2026">Open Models Roundup</a>
+    <h3><span class="tag opportunity">OPPORTUNITY</span> Supply Chain AI — From Hype to Operational Reality</h3>
+    <p>FreightWaves' 2026 AI Excellence in Supply Chain Award highlights that AI has "moved from the edges of the supply chain to its center." Dell Technologies Capital's Manifest 2026 report: logistics CEOs are being "bombarded with pitches" but skepticism remains — "we have to earn their trust." The opportunity: prove ROI with measurable cost/time savings, not vague promises.</p>
+    <a href="https://live.freightwaves.com/supply-chain-ai-symposium-2026" class="source-link">Supply Chain AI Symposium 2026</a> | <a href="https://www.delltechnologiescapital.com/resources/manifest2026" class="source-link">Dell Capital — Manifest 2026 Report</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag opportunity">DATA MOAT</span> Data Quality Is Now the Bottleneck — Not Model Quality</h3>
-    <p>Both the Supply Chain Management Review and Cranium AI reports from this week confirm: enterprise AI projects are failing on data foundation, not model capability. The 2026 SCMR article states "Garbage In, Garbage Out" and "AI readiness isn't enough for CSCOs." <strong>For logistics:</strong> Companies with clean ERP data + shipment history will outperform competitors using the same AI tools. The advantage is YOUR data, not the AI. Clean your ERP data now. It's the most defensible moat in 2026.</p>
-    <a class="source-link" href="https://www.scmr.com/article/garbage-in-ai-out-why-data-discipline-drives-supply-chain-optimization/resources">SCMR Analysis</a>
+    <h3><span class="tag opportunity">OPPORTUNITY</span> AI Data Residency as Competitive Advantage</h3>
+    <p>OpenRouter's June blog on "How to Enforce AI Data Residency Without Building Local Infrastructure" highlights a growing enterprise concern. For logistics companies handling cross-border shipping data, the ability to enforce data residency in a single API request (not via infrastructure) is a selling point. Indian B2B especially fears data leaving the country.</p>
+    <a href="https://openrouter.ai/blog" class="source-link">OpenRouter Blog — Data Residency</a>
   </div>
 </div>
 
@@ -206,27 +213,33 @@ body {
   <div class="section-title">⚠️ Watch Out</div>
 
   <div class="card">
-    <h3><span class="tag risk">RETROACTIVE</span> EU AI Act Is Retroactive — Existing High-Risk AI Is In Scope</h3>
-    <p>The June 16 amendments did NOT make the Act purely prospective. AI systems already deployed in high-risk settings (hiring, healthcare, law enforcement, logistics routing) are still in scope. You get more TIME but not amnesty. The grace period runs from when a system was first placed on the market, not from the amendment date. <strong>Action:</strong> audit every AI touchpoint touching EU customers NOW. Log everything. The "more time" is to fix, not to ignore.</p>
-    <a class="source-link" href="https://www.hklaw.com/en/insights/publications/2026/04/us-companies-face-eu-ai-acts-possible-august-2026-compliance-deadline">Holland & Knight Analysis</a>
+    <h3><span class="tag risk">RISK</span> EU AI Act — High-Risk Enforcement in 33 Days (August 2, 2026)</h3>
+    <p>The EU AI Act's third and most operationally complex wave hits high-risk AI systems on August 2, 2026. Providers must complete conformity assessments, technical documentation, risk management systems, and quality management systems. Deployers must perform Data Protection Impact Assessments. While Parliament voted 423-57 to delay to December 2027, this extension is NOT yet legally binding. US companies operating in EU markets should prepare NOW.</p>
+    <a href="https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-high-risk-compliance-deadline-20" class="source-link">CSA — EU AI Act High-Risk Deadline</a> | <a href="https://www.hklaw.com/en/insights/publications/2026/04/us-companies-face-eu-ai-acts-possible-august-2026-compliance-deadline" class="source-link">Holland & Knight — US Companies EU AI Act</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag risk">PRICING WHIPLASH</span> Every AI Tool Moved to Usage Pricing in June — Track Your Burn</h3>
-    <p>GitHub Copilot (June 1), Claude Agent SDK (June 15), Zapier AI (June 15). All moved from flat subscription to usage/model-based pricing in 30 days. If you're running automated AI tasks — cron jobs, agents, GitHub Actions, workflows — your costs are now VARIABLE and depend on model choice. <strong>Immediate action:</strong> set spending alerts, map which tasks use which model, and benchmark cost per task. The days of "unlimited AI" from subscriptions are over.</p>
-    <a class="source-link" href="https://blog.mean.ceo/zapier-news-june-2026">Zapier Pricing Analysis</a>
+    <h3><span class="tag risk">RISK</span> AI Data Retention — Prompts and Outputs Stored Indefinitely</h3>
+    <p>Enterprise security researchers flag that AI tools store prompts and outputs indefinitely — creating an enormous attack surface. When you feed customer data, financial records, or logistics manifests into an AI model, that data persists in training sets, logs, and caches. The business question isn't "can we use AI?" but "what data can we safely feed it?"</p>
+    <a href="https://www.a-lign.com/articles/eu-ai-act-enforcement-delay" class="source-link">A-LIGN — EU AI Act Enforcement Analysis</a>
   </div>
 
   <div class="card">
-    <h3><span class="tag risk">RETENTION</span> AI Data Retention Is Now an Enterprise Security Risk</h3>
-    <p>JD Supra's 2026 AI security governance analysis: prompts, uploads, model outputs, metadata, and interaction logs are often stored far longer than users realize and reused for model training by default unless opted out. <strong>For Sellatica:</strong> verify what happens to client data processed through Anthropic, OpenRouter, and any third-party agents. Document retention windows. Clients will ask. RBAC for AI systems is no longer optional.</p>
-    <a class="source-link" href="https://www.jdsupra.com/legalnews/ai-security-and-access-controls-best-6718869">JD Supra Analysis</a> | <a class="source-link" href="https://cranium.ai/resources/blog/ai-safety-and-security-in-2026-the-urgent-need-for-enterprise-cybersecurity-governance">Cranium AI Governance</a>
+    <h3><span class="tag risk">RISK</span> DeepSeek Model Migration Deadline — July 24, 2026</h3>
+    <p>DeepSeek's legacy model IDs retire on July 24, 2026 — just 24 days away. Any integration using older DeepSeek model endpoints will break. If your workflows depend on DeepSeek V3/R1 API calls, migrate to V4/V4 Flash NOW. This is a hard deadline with no grace period announced.</p>
+    <a href="https://deepseek.ai/deepseek-v4" class="source-link">DeepSeek V4 Migration Info</a>
+  </div>
+
+  <div class="card">
+    <h3><span class="tag risk">RISK</span> Pricing Whiplash — Every AI Tool Changed Pricing in June 2026</h3>
+    <p>GitHub Copilot (June 1), Claude Agent SDK (paused), Zapier AI (June 15), and OpenRouter's free model promotions all in one month. The pattern: AI companies are racing to usage-based pricing while simultaneously giving away the best models to capture market share. For businesses budgeting AI costs, this is chaos. Lock in annual contracts where possible, or budget for 2-3x variance.</p>
+    <a href="https://www.digitalapplied.com/blog/anthropic-ipo-filing-2026-claude-stack-analysis" class="source-link">Digital Applied — Anthropic IPO Analysis</a>
   </div>
 </div>
 
 <div class="footer">
-  <p>Research compiled by ALEX for Nirman Khairnar — NK's Ops</p>
-  <p>Sources linked inline. All content from last 24-48 hours. Deployed 2026-06-29 07:30 UTC</p>
+  <p>Research compiled by ALEX for Nirman Khaīrnar — NK's Ops</p>
+  <p>Sources linked inline. All content from last 24-48 hours.</p>
 </div>
 </body>
 </html>
