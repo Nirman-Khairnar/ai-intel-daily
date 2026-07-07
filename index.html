@@ -112,106 +112,78 @@ body {
 <body>
 <div class="header">
   <h1>🤖 AI Intel Daily</h1>
-  <div class="date">July 06, 2026 — NK's Operations</div>
+  <div class="date">July 07, 2026 — NK's Operations</div>
+</div>
+
+<div class="lead">
+    CORRECTION: June 28–29 briefs reported Anthropic's June 15 Agent SDK billing change as "paused." Releasebot confirms: Claude Sonnet 5 is live and programmatic-usage credit IS active for Agent SDK, headless <code>claude -p</code>, and GitHub Actions.
 </div>
 
 <div class="section">
-  <h2 class="section-title">Tool Updates</h2>
+  <div class="section-title">🔧 Tool Updates</div>
   <div class="card">
     <h3>Hermes Agent v0.18.0 — The Judgment Release (July 1)</h3>
-    <p>Hermes Agent shipped v0.18.0 with zero open P0/P1 issues, introducing /goal completion contracts, /learn skill distillation, background sub-agents, and Google Vertex AI integration. The release focuses on verifiable agent completion—agents now say 'done' only when tests, linters, and builds pass, closing the #1 silent failure loop in agent workflows.</p>
-    <p><span class="tag update">Tool Update</span></p>
-    <p><a class="source-link" href="https://www.reddit.com/r/hermesagent/comments/1ukxez2/hermes_agent_v0180_the_judgment_release_202671" target="_blank">[source]</a> <a class="source-link" href="https://www.youtube.com/watch?v=eZFqLbzRR1k" target="_blank">[source]</a></p>
+    <p>Zero open P0/P1 issues. Introduces /goal completion contracts (agents judge completion by actual evidence, not vibes), /learn skill distillation (show Hermes what you did to create reusable skills), background sub-agents, and Google Vertex AI integration. Closes the #1 silent failure loop in agent workflows.</p>
+    <p><a href="https://www.reddit.com/r/hermesagent/comments/1ukxez2/hermes_agent_v0180_the_judgment_release_202671" class="source-link">Reddit announcement</a> • <a href="https://github.com/NousResearch/hermes-agent/releases" class="source-link">GitHub releases</a></p>
   </div>
   <div class="card">
-    <h3>n8n 2026: Rebuilt AI Agent Node & Canvas UI</h3>
-    <p>n8n's 2026 release centers on a rebuilt AI Agent node supporting tool calling across Claude, GPT-4o, Gemini 1.5 Pro, and Mistral; a new Canvas UI replacing the flat workflow builder with spatial clustering; and a redesigned HTTP Request node with native OAuth 2.0 PKCE flow, retry logic with exponential backoff, and request chaining. Self-hosted and cloud versions now diverge on AI feature rollout timing.</p>
-    <p><span class="tag update">Tool Update</span></p>
-    <p><a class="source-link" href="https://www.softomatesolutions.com/blog/n8n-updates-2026-whats-new" target="_blank">[source]</a></p>
+    <h3>Cloudflare AI: Detached Background Sub-Agent Runs</h3>
+    <p>First-class detached (background) sub-agent runs with live progress and durable milestones. Single <code>runTurn</code> turn-admission entry point. Large recovery and reliability fixes converging <code>@cloudflare/think</code> and <code>@cloudflare/ai-chat</code> onto one model. Enables reliable long-running agent workflows.</p>
+    <p><a href="https://releasebot.io/updates/cloudflare/ai" class="source-link">Cloudflare AI 110 release notes</a> • <a href="https://www.digitalapplied.com/blog/cloudflare-temporary-accounts-ai-agents-2026-guide" class="source-link">Temporary Accounts guide</a></p>
   </div>
   <div class="card">
-    <h3>Claude Code Improves CLI Reliability (July 2026)</h3>
-    <p>Claude Code adds a Manual default permission mode, smarter AskUserQuestion behavior, and fixes for crash/session reliability, SSL handling, retries, background agent behavior, voice dictation, plugin matching, and Linux voice detection. It also adds fullscreen mouse click controls and improves guidance/error clarity for smoother agent workflows.</p>
-    <p><span class="tag update">Tool Update</span></p>
-    <p><a class="source-link" href="https://releasebot.io/updates/anthropic/claude-code" target="_blank">[source]</a></p>
-  </div>
-  <div class="card">
-    <h3>GitHub Copilot Usage Metrics Improved (July 2026)</h3>
-    <p>GitHub Copilot CLI now reports suggested lines of code, improves IDE identification for server-side telemetry users, and attributes AI credit consumption more completely. The CLI can now run in GitHub Actions using the built-in GITHUB_TOKEN, enabling automated workflows with accurate usage tracking.</p>
-    <p><span class="tag update">Tool Update</span></p>
-    <p><a class="source-link" href="https://releasebot.io/updates/github" target="_blank">[source]</a></p>
-  </div>
-  <div class="card">
-    <h3>Cloudflare AI Traffic Policy Update (July 1, 2026)</h3>
-    <p>Cloudflare now sorts AI traffic into three buckets—Search, Agent, and Training—and only Search stays open by default. AI companies have until September 15, 2026 to separate web crawlers used for search from those used for AI training and agents, or face default blocking on many publisher sites. This marks a shift toward accountable AI consumption of publisher content.</p>
-    <p><span class="tag update">Tool Update</span></p>
-    <p><a class="source-link" href="https://www.linkedin.com/posts/vibs-abhishek_cloudflare-just-told-ai-agents-they-are-no-activity-7478604142677086208-YEAe" target="_blank">[source]</a> <a class="source-link" href="https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content" target="_blank">[source]</a></p>
-  </div>
-  <div class="card">
-    <h3>AWS SES Pricing Update 2026: Free Tier Revised</h3>
-    <p>Amazon SES new customers now get 3,000 free messages/month for 12 months (replacing the old 62K/month EC2 tier). After the free tier, all volume costs $0.10 per 1,000 emails. Dedicated IPs are available: standard at $24.95/IP/month or managed at $15/account/month plus volume fees. Inbound email after 1K free/month costs $0.10 per 1,000 messages.</p>
-    <p><span class="tag update">Tool Update</span></p>
-    <p><a class="source-link" href="https://www.saaspricepulse.com/tools/amazon-ses" target="_blank">[source]</a></p>
-  </div>
-</div>
-<div class="section">
-  <h2 class="section-title">AI Developments</h2>
-  <div class="card">
-    <h3>Hermes Agent Desktop App Surpasses 180K GitHub Stars</h3>
-    <p>Hermes Agent shipped its official desktop app on June 2, 2026 as a public preview at v0.15.2 with native builds for macOS, Windows, and Linux. The project has now accumulated over 180,000 GitHub stars in under four months since its February 25 launch, making it the fastest-growing open-source agent framework of 2026. The desktop release eliminates the terminal requirement that previously limited adoption.</p>
-    <p><span class="tag development">AI Development</span></p>
-    <p><a class="source-link" href="https://medium.com/@tentenco/hermes-agent-desktop-app-everything-you-need-to-know-about-nous-researchs-self-improving-ai-agent-3cb59bd31e5f" target="_blank">[source]</a></p>
-  </div>
-  <div class="card">
-    <h3>OpenRouter MCP Server Goes Live (June 28, 2026)</h3>
-    <p>OpenRouter released a live Model Context Protocol (MCP) server providing real-time model catalog, benchmarks, pricing, and test inference directly inside Hermes/Claude Code/Codex/OpenCode. Agents can now dynamically select the cheapest or best model per task with grounded data, enabling cost-aware agent orchestration without leaving the agent interface.</p>
-    <p><span class="tag development">AI Development</span></p>
-    <p><a class="source-link" href="https://hermes-agent.nousresearch.com/blog/openrouter-mcp-server" target="_blank">[source]</a></p>
-  </div>
-  <div class="card">
-    <h3>AI Cyber Attack Surface Expands in 2026</h3>
-    <p>AI-assisted vulnerability discovery is driving a record 66,000 CVEs in 2026. Emerging threats include prompt injection leading to unauthorized data access and hijacked AI workflows. Tenable research shows 86% of organizations have critical-severity vulnerabilities in third-party packages, creating an 'AI exposure gap' where AI adoption outpaces security controls.</p>
-    <p><span class="tag development">AI Development</span></p>
-    <p><a class="source-link" href="https://www.tenable.com/blog/ai-cyber-attacks-explosion-2026" target="_blank">[source]</a></p>
-  </div>
-</div>
-<div class="section">
-  <h2 class="section-title">Business Opportunities</h2>
-  <div class="card">
-    <h3>Supply Chain AI Symposium 2026 - Chicago July 15</h3>
-    <p>FreightWaves hosts the Supply Chain AI Symposium in Chicago on July 15, 2026, focusing on real-world AI application in global supply chains. The event features the AI Excellence in Supply Chain Award honoring both technology vendors and operators deploying AI for measurable results. Nominations close July 10 at 5PM ET.</p>
-    <p><span class="tag opportunity">Opportunity</span></p>
-    <p><a class="source-link" href="https://live.freightwaves.com/supply-chain-ai-symposium-2026" target="_blank">[source]</a> <a class="source-link" href="https://www.facebook.com/FreightWaves/posts/-ai-has-moved-from-the-edges-of-the-supply-chain-to-its-center-and-freightwaves-/1608253041305119" target="_blank">[source]</a></p>
-  </div>
-  <div class="card">
-    <h3>AI Adoption in Supply Chains Lags Despite Interest (July 2026)</h3>
-    <p>A July 2026 study of 200 retail/wholesale supply chain operators found only 10% have AI live in workflows. Traction appears in demand forecasting, inventory optimization, price optimization, partner data chaos resolution, and predictive logistics. The gap between AI interest and operational deployment represents a major service opportunity for integrators.</p>
-    <p><span class="tag opportunity">Opportunity</span></p>
-    <p><a class="source-link" href="https://www.inboundlogistics.com/articles/ai-in-supply-chain-management-how-useful-will-it-be-in-2026" target="_blank">[source]</a></p>
-  </div>
-  <div class="card">
-    <h3>Usage-Based Pricing Race Creates Arbitrage Opportunities</h3>
-    <p>Every major AI tool shifted to usage-based or model-based pricing in June 2026: GitHub AI Credits, Claude programmatic credits, Zapier model-based tiers, OpenRouter free tier sustainability. This creates arbitrage opportunities for operators who can optimize usage across platforms or negotiate enterprise volume discounts that bypass per-user pricing.</p>
-    <p><span class="tag opportunity">Opportunity</span></p>
-    <p><a class="source-link" href="~/wiki/daily-briefs/2026-07-04.md" target="_blank">[source]</a></p>
-  </div>
-</div>
-<div class="section">
-  <h2 class="section-title">Watch Out</h2>
-  <div class="card">
-    <h3>EU AI Act High-Risk Enforcement Date Approaching: August 2, 2026</h3>
-    <p>The EU AI Act's high-risk AI obligations become legally enforceable on August 2, 2026 (24 months after entry into force). Despite a European Commission proposal to delay to late 2027, this extension has not been enacted into law. Fines reach up to €35 million or 7% of global turnover for prohibited practices, and €15 million or 3% for high-risk violations. Operators using AI in logistics, routing, or customer service must begin conformity assessments now.</p>
-    <p><span class="tag risk">Watch Out</span></p>
-    <p><a class="source-link" href="https://www.linkedin.com/posts/quantari-solutions_ai-futureofwork-artificialintelligence-activity-7476476589338148864-ErWo" target="_blank">[source]</a> <a class="source-link" href="https://www.mckennaconsultants.com/eu-ai-act-high-risk-compliance-a-technical-readiness-guide-for-august-2026" target="_blank">[source]</a></p>
-  </div>
-  <div class="card">
-    <h3>AI Pricing Volatility Continues into Q3 2026</h3>
-    <p>Following June 2026's mass shift to usage-based pricing, AI tool pricing remains volatile as vendors experiment with hybrid models, volume tiers, and credit systems. Operators should lock in multi-year agreements where possible and monitor usage closely to avoid unexpected cost spikes from changing credit valuations or model-based tiers.</p>
-    <p><span class="tag risk">Watch Out</span></p>
-    <p><a class="source-link" href="~/wiki/daily-briefs/2026-07-04.md" target="_blank">[source]</a></p>
+    <h3>GitHub Copilot: MCP Server Management & Usage Metrics</h3>
+    <p>Added <code>/mcp list</code> to show attached MCP servers and status, allow /mcp list and /plugin list while agent is working. Browse and filter models more easily in CLI model picker. Made three improvements to Copilot usage metrics API: reports suggested lines of code, identifies users' IDE via server-side telemetry, attributes AI credit consumption more completely.</p>
+    <p><a href="https://releasebot.io/updates/github" class="source-link">GitHub Release Notes - July 2026</a> • <a href="https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026" class="source-link">Code review will consume GitHub Actions minutes</a></p>
   </div>
 </div>
 
+<div class="section">
+  <div class="section-title">🚀 AI Developments</div>
+  <div class="card">
+    <h3>Supply Chain AI Symposium 2026 — Chicago July 15</h3>
+    <p>FreightWaves hosts the Supply Chain AI Symposium in Chicago on July 15, 2026, focusing on real-world AI application in global supply chains. Honors AI Solution Providers (tech vendors) and Operational AI Integration (carriers, 3PLs, forwarders, shippers deploying AI). Nominations close July 10 at 5PM ET.</p>
+    <p><a href="https://live.freightwaves.com/supply-chain-ai-symposium-2026" class="source-link">Supply Chain AI Symposium 2026</a> • <a href="https://www.facebook.com/FreightWaves/posts/-ai-has-moved-from-the-edges-of-the-supply-chain-to-its-center-and-freightwaves-/1608253041305119" class="source-link">FreightWaves post on AI in supply chain center</a></p>
+  </div>
+  <div class="card">
+    <h3>EU AI Act High-Risk Enforcement: August 2, 2026</h3>
+    <p>The EU AI Act's high-risk AI obligations become legally enforceable on August 2, 2026 (24 months after entry into force). Triggers application of most provisions not already in force, including comprehensive requirements for high-risk AI systems listed in Annex III. Fines up to 35M EUR or 7% global turnover for prohibited practices.</p>
+    <p><a href="https://artificialintelligenceact.eu/enforcement-of-chapter-v-under-the-eu-ai-act" class="source-link">Enforcement of Chapter V under EU AI Act</a> • <a href="https://www.pearlcohen.com/new-guidance-under-the-eu-ai-act-ahead-of-its-next-enforcement-date" class="source-link">New Guidance under EU AI Act ahead of enforcement</a></p>
+  </div>
+  <div class="card">
+    <h3>State of AI Adoption in Supply Chains (July 2026)</h3>
+    <p>Only 10% of 200 retail/wholesale supply chain operators have AI live in workflows. Traction in: demand forecasting, inventory optimization, price optimization, partner data chaos resolution, predictive logistics. Highlights the gap between AI potential and actual implementation in logistics operations.</p>
+    <p><a href="https://www.staffingindustry.com/news/global-daily-news/most-logistics-jobs-face-ai-shift-but-workers-lack-training" class="source-link">Most logistics jobs face AI shift but workers lack training</a> • <a href="https://nshift.com/blog/ai-in-logistics-2026-reality-check" class="source-link">AI in logistics 2026: the skills gap is the real limit</a></p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">💡 Business Opportunities</div>
+  <div class="card">
+    <h3>Loop AI Logistics Platform: $95m Series C Funding</h3>
+    <p>AI-powered logistics and supply chain decision-making platform Loop bags $95m in Series C funding. Funds will expand platform across broader enterprise use cases, deepen product and engineering capabilities, and invest in AI talent. Aims to become "the foundational platform for logistics and supply chain decision-making" by turning fragmented operational and financial data into actionable insights.</p>
+    <p><a href="https://retailtechinnovationhub.com/home/2026/4/19/ai-powered-logistics-and-supply-chain-decision-making-platform-loop-bags-95-million-in-series-c-funding" class="source-link">Loop bags $95m Series C funding</a> • <a href="https://www.ycombinator.com/companies/industry/supply-chain" class="source-link">Y Combinator Supply Chain Startups 2026</a></p>
+  </div>
+  <div class="card">
+    <h3>Y Combinator Supply Chain Startups 2026</h3>
+    <p>Current YC batch includes: MarkIt (AI agents that work inside trade professionals' workflows — Excel, PDFs, broker portals), Vendra (faster custom parts manufacturing in America), Soff (sales agents for chemical manufacturers to grow revenue), Poka Labs (AI platform for chemical sales reps to win more business), Attain (one-stop shop for convenience store inventory across suppliers).</p>
+    <p><a href="https://www.ycombinator.com/companies/industry/supply-chain" class="source-link">Y Combinator Supply Chain Startups 2026</a> • <a href="https://fundraiseinsider.com/blog/supply-chain-startups" class="source-link">List of Funded Supply Chain Startups 2026</a></p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">⚠️ Watch Out</div>
+  <div class="card">
+    <h3>EU AI Act Chapter V Enforcement: August 2, 2026</h3>
+    <p>On August 2, 2026, the Commission's enforcement powers in respect of GPAI (General Purpose AI) model providers come into force. This marks a significant expansion of regulatory oversight beyond high-risk systems to foundation models that power many AI applications.</p>
+    <p><a href="https://artificialintelligenceact.eu/enforcement-of-chapter-v-under-the-eu-ai-act" class="source-link">Enforcement of Chapter V under EU AI Act</a> • <a href="https://www.pearlcohen.com/new-guidance-under-the-eu-ai-act-ahead-of-its-next-enforcement-date" class="source-link">New Guidance under EU AI Act ahead of enforcement</a></p>
+  </div>
+  <div class="card">
+    <h3>Cloudflare AI Crawler Policy: Sept 15 Deadline</h3>
+    <p>Cloudflare's new policy (effective July 1, 2026) gives AI companies until September 15, 2026 to separate web crawlers used for search from those used for AI training and agents. After this date, mixed-use crawlers face default blocking on many publisher sites, potentially impacting AI training data collection and agent functionality.</p>
+    <p><a href="https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content" class="source-link">Cloudflare's new policy pushes AI companies to pay for publishers' content</a> • <a href="https://www.linkedin.com/posts/vibs-abhishek_cloudflare-just-told-ai-agents-they-are-no-activity-7478604142677086208-YEAe" class="source-link">Vibhanshu Abhishek's LinkedIn post on Cloudflare policy</a></p>
+  </div>
+</div>
 
 <div class="footer">
   <p>Research compiled by ALEX for Nirman Khaīrnar — NK's Ops</p>
