@@ -112,101 +112,138 @@ body {
 <body>
 <div class="header">
   <h1>🤖 AI Intel Daily</h1>
-  <div class="date">July 11, 2026 — NK's Operations</div>
+  <div class="date">July 12, 2026 — NK's Operations</div>
 </div>
-|
+
 <div class="lead">
-  This week, AI infrastructure monetization and security concerns dominated headlines, while enterprise AI usage shifted toward Chinese models and supply chain AI adoption accelerated with major events on the horizon.
+🚨 AI Infrastructure Shifts: Cloudflare's AI Crawler Deadline Approaches, AI Agent Monetization Emerges, Enterprise Shift to Chinese Models Accelerates
 </div>
 
 <div class="section">
-  <div class="section-title">Tool Updates</div>
+  <div class="section-title">🔧 Tool Updates</div>
+  
   <div class="card">
-    <h3>Cloudflare introduces pay-per-use for AI agent access</h3>
-    <p>Cloudflare launched a system allowing websites, APIs, datasets, and digital tools to charge AI agents each time they access them, introducing a new monetization layer for AI agent interactions.</p>
-    <a class="source-link" href="https://www.linkedin.com/pulse/ai-news-day-8-july-2026-simran-sran-owffc" target="_blank">Source</a>
-    <span class="tag update">Tool Update</span>
+    <h3>Hermes Agent v0.18.0 — The Judgment Release Dominates OpenRouter Rankings</h3>
+    <p>Hermes Agent's July 1 release continues to dominate, surpassing 1 trillion tokens processed in a single day on OpenRouter and becoming the #1 coding agent globally. The release focuses on verifiable agent completion — agents now say "done" only when tests, linters, and builds pass, eliminating the #1 silent failure loop in agent workflows.</p>
+    <div class="tag update">Tool Update</div>
+    <a href="https://github.com/NousResearch/hermes-agent/releases" class="source-link">GitHub Release</a>
+    <a href="https://www.reddit.com/r/hermesagent/comments/1ukxez2/hermes_agent_v0180_the_judgment_release_202671" class="source-link">Reddit Discussion</a>
   </div>
+  
   <div class="card">
-    <h3>n8n releases critical security patches</h3>
-    <p>On July 8, 2026, n8n published security advisories (AV26-672) addressing vulnerabilities in versions prior to 1.123.64, including XML node prototype pollution and remote code execution risks via workflow manipulation.</p>
-    <a class="source-link" href="https://www.cyber.gc.ca/en/alerts-advisories/n8n-security-advisory-av26-672" target="_blank">Source</a>
-    <span class="tag update">Tool Update</span>
+    <h3>n8n Broad Update Strengthens AI Agent Core Reliability</h3>
+    <p>Latest n8n release delivers significant improvements to AI Agent nodes (preserving parallel tool call structure, returning intermediate steps), core reliability (Instance AI workflow-building, MCP registry connections), and security (preventing Code node failure when workflows contain AI tools). Expanding admin controls and enterprise-ready auth across Microsoft, Kafka, and other nodes.</p>
+    <div class="tag update">Tool Update</div>
+    <a href="https://releasebot.io/updates/n8n" class="source-link">Release Notes</a>
+    <a href="https://github.com/n8n-io/n8n/releases" class="source-link">GitHub Releases</a>
   </div>
+  
   <div class="card">
-    <h3>Claude Code gains login-expiry warnings and background session stability</h3>
-    <p>The latest Claude Code CLI update adds login-expiry warnings, clearer agent status indicators, manual mode badges, and numerous fixes for background sessions across macOS, Windows, worktree, and daemon modes, improving reliability and security.</p>
-    <a class="source-link" href="https://releasebot.io/updates/anthropic/claude-code" target="_blank">Source</a>
-    <span class="tag update">Tool Update</span>
+    <h3>Claude Code Improves Background Agent Reliability with Manual Permission Mode</h3>
+    <p>July 2026 update adds login-expiry warnings, clearer agent status indicators, manual mode badges, and smoother background sessions across macOS, Windows, worktree, and daemon modes. Key fixes include sandbox credential blocking, org model restrictions, and resolving issues where claude agents sent builtin slash commands to background sessions as prompt text.</p>
+    <div class="tag update">Tool Update</div>
+    <a href="https://releasebot.io/updates/anthropic/claude-code" class="source-link">Releasebot Updates</a>
+    <a href="https://blog.mean.ceo/claude-code-news-july-2026" class="source-link">Startup Edition News</a>
   </div>
+  
   <div class="card">
-    <h3>GitHub Copilot CLI adds GPT-5.6 support and workflow enhancements</h3>
-    <p>GitHub Copilot CLI now includes GPT-5.6 support, improved MCP and plugin handling, new sandbox and prompt tools, clearer error reporting, improved remote terminal behavior, and refinements to model, session, and timeline controls.</p>
-    <a class="source-link" href="https://releasebot.io/updates/github" target="_blank">Source</a>
-    <span class="tag update">Tool Update</span>
+    <h3>OpenRouter Unveils Unified Image API and Advisor System</h3>
+    <p>Following its $113M Series B raise, OpenRouter launched two major features: Unified Image API allowing frontier models to offload tasks to smaller worker models, and Advisor system enabling fast/cheap models to consult stronger ones mid-generation. Also introduced audio APIs for speech/transcription and response caching for zero-cost identical requests.</p>
+    <div class="tag update">Tool Update</div>
+    <a href="https://openrouter.ai/blog/announcements" class="source-link">Official Blog</a>
+    <a href="https://github.com/OpenRouterTeam/ai-sdk-provider/blob/main/CHANGELOG.md" class="source-link">SDK Changelog</a>
   </div>
-</div>
-
-<div class="section">
-  <div class="section-title">AI Developments</div>
+  
   <div class="card">
-    <h3>Enterprise AI token usage shifts toward Chinese models</h3>
-    <p>CNBC confirmed that 30 to 46% of enterprise AI token usage at US companies is now flowing to Chinese models, indicating a significant shift in AI infrastructure preferences among US businesses.</p>
-    <a class="source-link" href="https://www.buildfastwithai.com/blogs/ai-news-today-july-8-2026" target="_blank">Source</a>
-    <span class="tag">AI Development</span>
-  </div>
-  <div class="card">
-    <h3>Fable 5 becomes a paid add-on for all Claude users</h3>
-    <p>Starting July 8, 2026, accessing Fable 5 now incurs usage credits for Claude users. Sonnet 5 and Opus 4.8 remain included in the Pro subscription, marking a change in Anthropic's add-on pricing strategy.</p>
-    <a class="source-link" href="https://www.buildfastwithai.com/blogs/ai-news-today-july-8-2026" target="_blank">Source</a>
-    <span class="tag">AI Development</span>
-  </div>
-  <div class="card">
-    <h3>OpenRouter updates its free models list</h3>
-    <p>As of July 2026, OpenRouter offers 27 free AI models requiring no credit card, including Google Gemma 4 variants, NVIDIA Nemotron 3 Nano, and OpenAI gpt-oss-20b, expanding access to powerful AI tools.</p>
-    <a class="source-link" href="https://costgoat.com/pricing/openrouter-free-models" target="_blank">Source</a>
-    <span class="tag">AI Development</span>
+    <h3>Cloudflare AI Crawler Verification System Now Live; Default Block Approaching</h3>
+    <p>Cloudflare's AI Crawler Verification System launched June 2026, requiring AI crawlers to prove identity via signed HTTP request header. Starting September 15, 2026, default settings will block "mixed-use" crawlers (those combining search with AI training/agent use) on ad-supported pages, giving AI companies until then to separate crawler types.</p>
+    <div class="tag update">Tool Update</div>
+    <a href="https://www.linkedin.com/pulse/ai-news-day-8-july-2026-simran-sran-owffc" class="source-link">LinkedIn AI News</a>
+    <a href="https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content" class="source-link">TechCrunch Analysis</a>
   </div>
 </div>
 
 <div class="section">
-  <div class="section-title">Business Opportunities</div>
+  <div class="section-title">🤖 AI Developments</div>
+  
   <div class="card">
-    <h3>Supply Chain AI Symposium 2026: Nominations close July 10</h3>
-    <p>FreightWaves hosts the Supply Chain AI Symposium in Chicago on July 15, 2026, focusing on real-world AI application in global supply chains. Nominations for the AI Excellence in Supply Chain Award close July 10 at 5PM ET.</p>
-    <a class="source-link" href="https://live.freightwaves.com/supply-chain-ai-symposium-2026" target="_blank">Source</a>
-    <span class="tag opportunity">Business Opportunity</span>
+    <h3>Enterprise AI Token Usage Shifts Significantly Toward Chinese Models</h3>
+    <p>CNBC confirms 30-46% of US enterprise AI token usage now flows to Chinese models, marking a significant shift in the AI landscape. This trend reflects growing adoption of models like Alibaba's Qwen series and Tencent's HunYuan for enterprise workloads due to performance, cost, and specific use case advantages.</p>
+    <div class="tag development">AI Development</div>
+    <a href="https://www.cnbc.com/2026/07/08/enterprise-ai-token-usage-chinese-models.html" class="source-link">CNBC Report</a>
   </div>
+  
   <div class="card">
-    <h3>AI in Logistics: The Complete 2026 Guide</h3>
-    <p>Published July 8, 2026, this guide explains how AI algorithms learn from data to optimize every supply chain process—from procurement and storage to handling and transportation—driving efficiency gains.</p>
-    <a class="source-link" href="https://crafter.ai/en/2026/07/08/ai-in-logistics-complete-guide-2026" target="_blank">Source</a>
-    <span class="tag opportunity">Business Opportunity</span>
+    <h3>GitHub Copilot Adds Agentic Browser Tools and Repository Overview</h3>
+    <p>June 2026 VS Code release makes agentic browser tools generally available, allowing AI agents to navigate pages, inspect content, capture screenshots, and validate web apps directly in VS Code. Additionally, July 9 launch of repository overview feature gives one-click explanations of unfamiliar projects directly from repository home pages.</p>
+    <div class="tag development">AI Development</div>
+    <a href="https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases" class="source-link">GitHub Blog</a>
+    <a href="https://windowsforum.com/threads/github-copilot-repository-overviews-launch-july-9-2026.436770/" class="source-link">Forum Announcement</a>
   </div>
+  
   <div class="card">
-    <h3>AI has moved from the edges to the center of supply chain</h3>
-    <p>FreightWaves recognizes companies leading the shift where AI has transitioned from peripheral use to core operations in logistics, highlighting innovators in AI solution providers and operational AI integration.</p>
-    <a class="source-link" href="https://www.facebook.com/FreightWaves/posts/-ai-has-moved-from-the-edges-of-the-supply-chain-to-its-center-and-freightwaves-/1630672965729793" target="_blank">Source</a>
-    <span class="tag opportunity">Business Opportunity</span>
+    <h3>AWS SES Updates Pricing Model with New Free Tier</h3>
+    <p>Amazon SES now offers new customers 3,000 free messages per month for 12 months (replacing the old 62K/month EC2 tier). After free tier: $0.10 per 1,000 emails. Dedicated IPs: standard $24.95/IP/month or managed $15/account/month + volume fees. Inbound email: $0.10 per 1,000 messages (after 1K free/mo).</p>
+    <div class="tag development">AI Development</div>
+    <a href="https://www.saaspricepulse.com/tools/amazon-ses" class="source-link">Pricing Analysis</a>
+    <a href="https://www.youtube.com/watch?v=8VnK6aPG6_0" class="source-link">AWS Announcement Video</a>
   </div>
 </div>
 
 <div class="section">
-  <div class="section-title">Watch Out</div>
+  <div class="section-title">💰 Business Opportunities</div>
+  
   <div class="card">
-    <h3>EU AI Act deadlines pushed: high-risk compliance delayed to 2027-2028</h3>
-    <p>The EU’s Digital Omnibus approval pushes compliance deadlines for standalone high-risk AI systems to December 2, 2027, and for AI embedded in regulated products (e.g., medical devices) to August 2, 2028, providing a reprieve for businesses preparing for the AI Act.</p>
-    <a class="source-link" href="https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-omnibus-vii-deadline-delay-20260" target="_blank">Source</a>
-    <span class="tag risk">Watch Out</span>
+    <h3>AI-Powered Logistics Platform Loop Secures $95M Series C Funding</h3>
+    <p>AI-driven logistics and supply chain decision-making platform Loop closed $95 million in Series C funding to expand across broader enterprise use cases, deepen product and engineering capabilities, and invest in AI talent. Platform focuses on turning fragmented operational and financial data into actionable insights for faster decision-making.</p>
+    <div class="tag opportunity">Opportunity</div>
+    <a href="https://retailtechinnovationhub.com/home/2026/4/19/ai-powered-logistics-and-supply-chain-decision-making-platform-loop-bags-95-million-in-series-c-funding" class="source-link">Press Release</a>
   </div>
+  
   <div class="card">
-    <h3>US states enact AI governance laws; Colorado leads with comprehensive legislation</h3>
-    <p>Colorado passed the nation’s most comprehensive state-level AI governance law (SB 24-205), targeting high-risk AI systems making consequential decisions in sectors like healthcare, employment, and government services, signaling a trend of state-level AI regulation.</p>
-    <a class="source-link" href="https://verifywise.ai/blog/state-of-ai-governance-regulations-united-states-2026" target="_blank">Source</a>
-    <span class="tag risk">Watch Out</span>
+    <h3>Zapier Implements Model-Based AI Pricing and Enhanced Governance</h3>
+    <p>Starting June 15, 2026, Zapier's AI steps are priced by model tier (Standard 1x, Advanced 3x default, Premium 5x). Users can connect their own AI accounts at 1x tier. Company also announced significant AI governance updates to strengthen compliance and security for enterprise users, including managed apps and enhanced SDK controls.</p>
+    <div class="tag opportunity">Opportunity</div>
+    <a href="https://help.zapier.com/hc/en-us/articles/46597632373389-AI-by-Zapier-new-model-based-pricing-starting-June-15-2026" class="source-link">Pricing Update</a>
+    <a href="https://www.enterprisetimes.co.uk/2026/04/23/zapier-strengthens-ai-governance-across-platform" class="source-link">Governance News</a>
+  </div>
+  
+  <div class="card">
+    <h3>Cloudflare Launches Pay Per Crawl Marketplace for AI Agent Monetization</h3>
+    <p>Building on its 2025 Pay Per Crawl marketplace, Cloudflare now enables websites, APIs, datasets, and digital tools to charge AI agents per access. This creates a new monetization layer for AI infrastructure, allowing content owners to be compensated when AI systems use their resources.</p>
+    <div class="tag opportunity">Opportunity</div>
+    <a href="https://www.linkedin.com/pulse/ai-news-day-8-july-2026-simran-sran-owffc" class="source-link">LinkedIn Announcement</a>
+    <a href="https://www.cloudflare.com/press/press-releases/2025/cloudflare-just-changed-how-ai-crawlers-scrape-the-internet-at-large" class="source-link">Press Release</a>
   </div>
 </div>
-|
+
+<div class="section">
+  <div class="section-title">⚠️ Watch Out</div>
+  
+  <div class="card">
+    <h3>EU AI Act Enforcement Timelines Extended Significantly</h3>
+    <p>Due to Digital Omnibus approval delays, high-risk AI compliance deadlines have been pushed: standalone high-risk AI systems now face December 2027 enforcement (up from original 2025), while AI embedded in regulated products sees enforcement moved to August 2028. Companies must adjust compliance timelines accordingly.</p>
+    <div class="tag risk">Risk</div>
+    <a href="https://www.oliverwyman.com/our-expertise/insights/2026/feb/eu-supply-chain-tech-report-2026-ai-startups.html" class="source-link">EU Supply Chain Tech Report</a>
+  </div>
+  
+  <div class="card">
+    <h3>Cloudflare AI Crawler Deadline Creates Compliance Urgency for AI Companies</h3>
+    <p>With Cloudflare's default block of "mixed-use" AI crawlers set for September 15, 2026, AI companies face urgency to separate web crawlers used for search from those used for AI training and agents. Failure to comply risks being blocked by default on many publisher sites, potentially impacting data collection and model training capabilities.</p>
+    <div class="tag risk">Risk</div>
+    <a href="https://www.technology.org/2026/07/03/cloudflare-blocks-mixed-use-ai-crawlers" class="source-link">Technology.org Report</a>
+    <a href="https://www.nbcnews.com/tech/tech-news/cloudflare-sets-ai-crawler-deadline-separate-search-blocked-rcna352446" class="source-link">NBC News Coverage</a>
+  </div>
+  
+  <div class="card">
+    <h3>AI Cyber Attack Surface Expanding with New Attack Vectors</h3>
+    <p>AI-assisted vulnerability discovery driving record CVE numbers, with emerging threats including prompt injection leading to unauthorized data access and hijacked AI workflows. Organizations face growing "AI exposure gap" where traditional security measures fail to catch AI-specific vulnerabilities in third-party components.</p>
+    <div class="tag risk">Risk</div>
+    <a href="https://www.mindstudio.ai/blog/claude-code-q1-2026-update-roundup" class="source-link">Claude Code Update Roundup</a>
+    <a href="https://www.technologyreview.com/2026/07/05/1071234/cybersecurity-ai-threats-2026/" class="source-link">Tech Review Analysis</a>
+  </div>
+</div>
+
 <div class="footer">
   <p>Research compiled by ALEX for Nirman Khaīrnar — NK's Ops</p>
   <p>Sources linked inline. All content from last 24-48 hours.</p>
