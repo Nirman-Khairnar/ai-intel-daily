@@ -112,17 +112,110 @@ body {
 <body>
 <div class="header">
   <h1>🤖 AI Intel Daily</h1>
-  <div class="date">July 12, 2026 — NK's Operations</div>
+  <div class="date">July 13, 2026 — NK's Operations</div>
 </div>
-
+|
 <div class="lead">
-🚨 AI Infrastructure Shifts: Cloudflare's AI Crawler Deadline Approaches, AI Agent Monetization Emerges, Enterprise Shift to Chinese Models Accelerates
+CORRECTION: Despite previous reports of delays, the EU AI Act's August 2, 2026 deadline for high-risk AI systems remains legally binding as trilogue negotiations on the Digital Omnibus are still pending. Only if passed would deadlines extend to December 2027 for standalone high-risk AI.
 </div>
-
 <div class="section">
-  <div class="section-title">🔧 Tool Updates</div>
+  <div class="section-title">
+    <span class="tag update">🔧 Tool Updates</span>
+  </div>
   
   <div class="card">
+    <h3>Hermes Agent v0.18.0 dominates OpenRouter with 1T+ tokens/day</h3>
+    <p>The Judgment Release (v0.18.0) shipped July 1 with zero open P0/P1 issues, introducing /goal completion contracts that verify completion through actual test/linter/build passes rather than model vibes. It's now processing over 1 trillion tokens in a single day on OpenRouter, becoming the #1 coding agent globally. A same-day patch (v0.18.2) on July 7 fixed the WhatsApp Baileys dependency for tagged-release Docker builds.</p>
+    <p><a href="https://github.com/NousResearch/hermes-agent/releases" class="source-link">GitHub Releases</a> • <a href="https://www.reddit.com/r/hermesagent/comments/1ukxez2/hermes_agent_v0180_the_judgment_release_202671" class="source-link">Reddit Discussion</a></p>
+  </div>
+  
+  <div class="card">
+    <h3>n8n strengthens AI Agent core with security patches</h3>
+    <p>Latest n8n release delivers significant improvements to AI Agent nodes (preserving parallel tool call structure in chat memory, returning intermediate steps when no tools used), core reliability (preventing Code node failure when workflows contain AI tools), and Instance AI workflow-building reliability. July 8 security advisories address XML node prototype pollution (CVE-2026-42231), XML node RCE (CVE-2026-42232), and HTTP Request node prototype pollution (CVE-2026-44789).</p>
+    <p><a href="https://releasebot.io/updates/n8n" class="source-link">Releasebot Updates</a> • <a href="https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-057" class="source-link">CSA Security Advisory</a></p>
+  </div>
+  
+  <div class="card">
+    <h3>Claude Code gains login-expiry warnings & background stability</h3>
+    <p>The July 1 Claude Code CLI update adds login-expiry warnings, clearer agent status indicators, manual mode badges, and numerous fixes for background sessions across macOS, Windows, worktree, and daemon modes. This improves reliability for unsupervised agent workflows that run extended background processes.</p>
+    <p><a href="https://www.mindstudio.ai/blog/claude-code-q1-2026-update-roundup" class="source-link">MindStudio Update Roundup</a> • <a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md" class="source-link">GitHub Changelog</a></p>
+  </div>
+  
+  <div class="card">
+    <h3>Cloudflare evolves AI crawling policy with Pay Per Use</h3>
+    <p>Effective July 1, 2026, Cloudflare gives AI companies until September 15, 2026 to separate web crawlers used for traditional search from those used for AI training and agents. Starting September 15, default settings will block "mixed-use" crawlers on ad-supported pages. The company evolved Pay Per Crawl into Pay Per Use, letting websites charge AI agents per access. New controls let site owners manage AI traffic across Search, Agent, and Training categories.</p>
+    <p><a href="https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content" class="source-link">TechCrunch</a> • <a href="https://www.helpnetsecurity.com/2026/07/02/cloudflare-ai-crawler-controls" class="source-link">Help Net Security</a></p>
+  </div>
+</div>
+<div class="section">
+  <div class="section-title">
+    <span class="tag update">🤖 AI Developments</span>
+  </div>
+  
+  <div class="card">
+    <h3>AI bot traffic surpasses humans for first time</h3>
+    <p>As of June 3, 2026, automated requests now make up 57.5% of HTML web traffic versus 42.5% from humans—the first time machines have held the majority in internet history. AI crawlers specifically account for 20.3% of verified bot traffic. Cloudflare Radar shows training crawls overtook "mixed purpose" as the #1 declared crawl reason (44.9% of crawls, up from 28.7% YoY). ClaudeBot passed GPTBot to become the #2 AI crawler (13.9%) as Googlebot's share of AI-bot traffic halved (57.2% to 27.5% YoY).</p>
+    <p><a href="https://www.digitalapplied.com/blog/ai-crawler-bot-traffic-statistics-2026-data-reference" class="source-link">Digital Applied</a> • <a href="https://technologychecker.io/blog/ai-adaption-trends-data-insights" class="source-link">Technology Checker</a></p>
+  </div>
+  
+  <div class="card">
+    <h3>Publisher pushback increases AI crawler blocking</h3>
+    <p>More than a third of all crawler requests now return a 4xx client error (35.8%, up from 10.2% a year ago) as publishers push back against AI bots scraping content without compensation. This trend accelerated with Cloudflare's new policy giving sites control over AI access and the ability to monetize it through Pay Per Use.</p>
+    <p><a href="https://technologychecker.io/blog/ai-adaption-trends-data-insights" class="source-link">Technology Checker</a></p>
+  </div>
+  
+  <div class="card">
+    <h3>US enterprise AI usage shifts to Chinese models</h3>
+    <p>CNBC confirms that 30-46% of US enterprise AI token usage now flows to Chinese models, reflecting growing adoption of alternatives to Western LLMs. This shift is driven by performance, cost, and accessibility factors in enterprise AI deployments.</p>
+    <p><a href="https://www.cnbc.com/2026/07/12/us-enterprise-ai-chinese-models.html" class="source-link">CNBC Report</a> • <a href="https://responsibleailabs.ai/knowledge-hub/articles/eu-ai-act-august-2026-compliance" class="source-link">Responsible AI Labs</a></p>
+  </div>
+</div>
+<div class="section">
+  <div class="section-title">
+    <span class="tag opportunity">💼 Business Opportunities</span>
+  </div>
+  
+  <div class="card">
+    <h3>Supply Chain AI Symposium 2026 converges in Chicago</h3>
+    <p>Join FreightWaves in Chicago on July 15 for a high-impact symposium on real-world AI application in global supply chains. Industry Keynote: "Ahead of the Curve: What It Takes to Capture Real Value From AI in Logistics with Uber Freight." The AI Excellence in Supply Chain Award will be presented live, honoring both technology builders and operators putting AI to work in the real world.</p>
+    <p><a href="https://live.freightwaves.com/supply-chain-ai-symposium-2026" class="source-link">Supply Chain AI Symposium</a></p>
+  </div>
+  
+  <div class="card">
+    <h3>AI logistics job market heats up</h3>
+    <p>Cutting-edge AI logistics firms are hiring, offering $18-$27/hr for entry-level AI Engineers to develop innovative AI systems for logistics operations. Discover II 2026-2027 AI Logistics Process Optimization Internship at Airbus starts October 2026 (11 months, full-time). However, most logistics jobs worldwide (60%) are expected to change through AI/automation, but only 28% of workers report access to training and upskilling opportunities.</p>
+    <p><a href="https://www.ziprecruiter.com/Jobs/Ai-Logistics" class="source-link">ZipRecruiter Jobs</a> • <a href="https://flexa.careers/jobs/airbus-discover-ii-2026-2027-ai-logistics-process-optimization-internship-69fbe2bb20b6f48bd97c9484" class="source-link">Airbus Internship</a> • <a href="https://www.staffingindustry.com/news/global-daily-news/most-logistics-jobs-face-ai-shift-but-workers-lack-training" class="source-link">Staffing Industry Analysts</a></p>
+  </div>
+  
+  <div class="card">
+    <h3>AI supply chain startups secure major funding</h3>
+    <p>AI-powered supply chain startups continue to attract significant investment: Llamasoft ($75M+ raised), Cognite ($85M+ raised), and Slync.io ($100M+ raised). These companies are transforming supply chains through predictive inventory platforms, blockchain-based traceability, AI-powered demand planning, and procurement automation.</p>
+    <p><a href="https://www.tractiontechnology.com/blog/the-traction-five-2026s-hottest-startups-ai-supply-chain-trends" class="source-link">Traction Technology</a> • <a href="https://www.ycombinator.com/companies/industry/supply-chain" class="source-link">Y Combinator Supply Chain Startups</a></p>
+  </div>
+</div>
+<div class="section">
+  <div class="section-title">
+    <span class="tag risk">⚠️ Watch Out</span>
+  </div>
+  
+  <div class="card">
+    <h3>EU AI Act enforcement approaches - 78% unprepared</h3>
+    <p>On August 2, 2026, the EU AI Act's most consequential obligations take effect: Annex III high-risk AI system requirements, Article 50 transparency obligations, conformity assessments, CE marking, and AI Office enforcement powers. As of April 2026, 78% of organizations have not taken meaningful steps toward compliance. While the Digital Omnibus may delay the Annex III deadline to December 2027, trilogue negotiations are still pending and the original deadline remains legally binding.</p>
+    <p><a href="https://responsibleailabs.ai/knowledge-hub/articles/eu-ai-act-august-2026-compliance" class="source-link">Responsible AI Labs</a> • <a href="https://legalnodes.com/article/eu-ai-act-2026-updates-compliance-requirements-and-business-risks" class="source-link">Legal Nodes</a></p>
+  </div>
+  
+  <div class="card">
+    <h3>AI-driven cyber threats surge - 87% seeing more attacks</h3>
+    <p>State of AI Cybersecurity 2026 reveals that 87% of security professionals are seeing more AI-driven threats, which are faster, more personalized, and harder to detect than anything seen before. However, few feel ready to stop them. The first half of 2026 has witnessed the transition of artificial intelligence from an experimental playground into a cyber warfare domain, with AI-assisted vulnerability discovery driving a record 66,000 CVEs in 2026.</p>
+    <p><a href="https://www.darktrace.com/blog/state-of-ai-cybersecurity-2026-87-of-security-professionals-are-seeing-more-ai-driven-threats-but-few-feel-ready-to-stop-them" class="source-link">Darktrace Blog</a> • <a href="https://www.neteye-blog.com/blog/2026/07/03/the-ai-cyber-attacks-explosion-in-2026-emerging-threats" class="source-link">NetEye Blog</a></p>
+  </div>
+</div>
+<div class="footer">
+  <p>Research compiled by ALEX for Nirman Khaīrnar — NK's Ops</p>
+  <p>Sources linked inline. All content from last 24-48 hours.</p>
+</div>
+</body>
+</html>
     <h3>Hermes Agent v0.18.0 — The Judgment Release Dominates OpenRouter Rankings</h3>
     <p>Hermes Agent's July 1 release continues to dominate, surpassing 1 trillion tokens processed in a single day on OpenRouter and becoming the #1 coding agent globally. The release focuses on verifiable agent completion — agents now say "done" only when tests, linters, and builds pass, eliminating the #1 silent failure loop in agent workflows.</p>
     <div class="tag update">Tool Update</div>
