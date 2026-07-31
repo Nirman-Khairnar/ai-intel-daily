@@ -112,98 +112,213 @@ body {
 <body>
 <div class="header">
   <h1>🤖 AI Intel Daily</h1>
-  <div class="date">July 30, 2026 — NK's Operations</div>
+  <div class="date">July 31, 2026 — NK's Operations</div>
 </div>
 
+<div class="section"><div class="section-title">Tool Updates</div>
+            <div class="card">
+                <div class="card-title">n8n@2.32.6 released</div>
+                <div class="card-summary">## [2.32.6](https://github.com/n8n-io/n8n/compare/n8n@2.32.5...n8n@2.32.6) (2026-07-29)
 
-    <section class="section">
-        <h2 class="section-title">Tool Updates</h2>
-        <div class="cards">
 
-    <div class="card">
-        <h3>Improved DoH JSON formatting for additional record types</h3>
-        <p>Cloudflare is rolling out updated formatting for the data field in the 1.1.1.1 DoH JSON API (application/dns-json). During the rollout, responses may use either the old or new format.</p>
-        <div>
-            <span class="tag ">update</span>
-        </div>
-        <a href="https://developers.cloudflare.com/changelog/post/2026-07-28-improved-record-display-format/" class="source-link" target="_blank">Source</a>
-    </div>
-    
-    <div class="card">
-        <h3>Cloudflare MCP servers support the new MCP 2026-07-28 Specification</h3>
-        <p>Cloudflare's product-specific MCP servers now support the new MCP 2026-07-28 Specification. Each request runs on a fresh stateless server without an MCP protocol session or protocol-specific Durable Object.</p>
-        <div>
-            <span class="tag ">update</span>
-        </div>
-        <a href="https://developers.cloudflare.com/changelog/post/2026-07-28-cloudflare-mcp-servers-mcp-2026-07-28/" class="source-link" target="_blank">Source</a>
-    </div>
-    
-    <div class="card">
-        <h3>Browser Run adds structured handoff for Human in the Loop</h3>
-        <p>Browser Run now supports structured handoff for Human in the Loop workflows. Using Cloudflare-specific CDP commands, your agent can signal that it needs help, a human steps in through Live View to handle the task, and the agent resumes once the work is done.</p>
-        <div>
-            <span class="tag ">update</span>
-        </div>
-        <a href="https://developers.cloudflare.com/changelog/post/2026-07-28-human-in-the-loop/" class="source-link" target="_blank">Source</a>
-    </div>
-    
-    <div class="card">
-        <h3>Control Cloudflare Gateway DNS caching with a maximum TTL setting</h3>
-        <p>You can now set a maximum time-to-live (TTL) for DNS responses returned by Gateway. When an upstream DNS record has a TTL that exceeds the configured maximum, Gateway caps it to your specified value.</p>
-        <div>
-            <span class="tag ">update</span>
-        </div>
-        <a href="https://developers.cloudflare.com/changelog/post/2026-07-28-gateway-maximum-dns-ttl/" class="source-link" target="_blank">Source</a>
-    </div>
-    
-    <div class="card">
-        <h3>Select models now require the Workers Paid plan</h3>
-        <p>Cloudflare is limiting Workers Free plan access to a few resource-intensive models to prioritize capacity for the broader Workers AI user base.</p>
-        <div>
-            <span class="tag ">update</span>
-        </div>
-        <a href="https://developers.cloudflare.com/changelog/post/2026-07-28-models-require-workers-paid/" class="source-link" target="_blank">Source</a>
-    </div>
-    
-    <div class="card">
-        <h3>Workers tracing — write custom spans with new startActiveSpan() and span.end() runtime APIs</h3>
-        <p>For more details, refer to the custom spans documentation.</p>
-        <div>
-            <span class="tag ">update</span>
-        </div>
-        <a href="https://developers.cloudflare.com/changelog/post/2026-07-28-start-active-span/" class="source-link" target="_blank">Source</a>
-    </div>
-    
-    <div class="card">
-        <h3>Agents SDK adds MCP Specification 2026-07-28 support</h3>
-        <p>Agents SDK v0.20.0 adds client and server support for the MCP 2026-07-28 release candidate. Workers can serve tools, prompts, resources, and elicitation without an MCP transport session or Durable Object.</p>
-        <div>
-            <span class="tag ">update</span>
-        </div>
-        <a href="https://developers.cloudflare.com/changelog/post/2026-07-27-agents-sdk-v0.20.0-mcp-sdk-v2/" class="source-link" target="_blank">Source</a>
-    </div>
-    
-    <div class="card">
-        <h3>Audit Logs v2 — Resource History</h3>
-        <p>Audit Logs v2 now includes Resource History. For any audit log entry, you can see the sequence of previous changes to the same resource and view a side-by-side diff of what was modified.</p>
-        <div>
-            <span class="tag ">update</span>
-        </div>
-        <a href="https://developers.cloudflare.com/changelog/post/2026-07-27-audit-logs-v2-resource-history/" class="source-link" target="_blank">Source</a>
-    </div>
-    
-    <div class="card">
-        <h3>n8n@2.32.6 released</h3>
-        <p>Bug fix: Accept 5-field cron expressions in schedule trigger.</p>
-        <div>
-            <span class="tag ">update</span>
-        </div>
-        <a href="https://github.com/n8n-io/n8n/releases/tag/n8n%402.32.6" class="source-link" target="_blank">Source</a>
-    </div>
-    
-        </div>
-    </section>
+### Bug Fixes
 
+* **core:** Accept 5-field cron expressions in schedule trigger ([#35013](https://github.com/n8...</div>
+                <a href="https://github.com/n8n-io/n8n/releases/tag/n8n%402.32.6" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: releases</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">v2.1.220 released</div>
+                <div class="card-summary">## What's changed
+
+- Bug fixes and reliability improvements
+</div>
+                <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.220" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: releases</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Dogfooding at scale: migrating cdnjs to Cloudflare’s Developer Platform</div>
+                <div class="card-summary">We moved cdnjs, serving 9 billion requests a day, entirely onto Cloudflare's Developer Platform. That means we’re running one of the Internet's busiest open-source CDNs on our own building blocks, and...</div>
+                <a href="https://blog.cloudflare.com/cdnjs-dev-platform-migration/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: Cloudflare Blog</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Post-quantum authentication to origins is now supported</div>
+                <div class="card-summary">Cloudflare now supports post-quantum (PQ) authentication when connecting to customer origin servers via Authenticated Origin Pulls and Custom Origin Trust Store. This is the first step towards providi...</div>
+                <a href="https://blog.cloudflare.com/post-quantum-authentication-to-origins/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: Cloudflare Blog</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">We’re open-sourcing our privacy proxy CLI</div>
+                <div class="card-summary">pvcli is a curl-like tool designed to simplify the testing of complex privacy protocols like OHTTP.</div>
+                <a href="https://blog.cloudflare.com/open-sourcing-our-privacy-proxy-cli/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: Cloudflare Blog</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">TechCrunch Disrupt 2026’s biggest stage features leaders from Amazon, Replit, Tether, with much more to come</div>
+                <div class="card-summary">The Disrupt Stage is where many of the biggest conversations in technology happen, with a legacy that stretches back for more than a decade.</div>
+                <a href="https://techcrunch.com/2026/07/30/techcrunch-disrupt-2026s-biggest-stage-features-leaders-from-amazon-replit-tether-with-much-more-to-come/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            </div>
+<div class="section"><div class="section-title">AI Developments</div>
+            <div class="card">
+                <div class="card-title">Hermes Agent v0.19.1 (v2026.7.30) released</div>
+                <div class="card-summary"># Hermes Agent v0.19.1 (v2026.7.30)
+
+**Release Date:** July 30, 2026
+
+> Patch release. This tag rolls up the ~1,000+ PRs merged since v0.19.0 into a stable tagged release for downstream consumers (Doc...</div>
+                <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.30" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: releases</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Natural disasters and government interference: examining Q2 2026’s major Internet disruption events</div>
+                <div class="card-summary">Cloudflare Radar tracked Internet disruptions driven by natural disasters, government-mandated shutdowns, and DNSSEC key rollovers over the last quarter. This post analyzes traffic telemetry to explai...</div>
+                <a href="https://blog.cloudflare.com/q2-2026-internet-disruption-summary/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: Cloudflare Blog</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares</div>
+                <div class="card-summary">The former OpenAI researcher’s fund was forced to unwind public equities after leveraged public bets plummeted. But he still has cards to play.</div>
+                <a href="https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Investors love AI, as long as you’re a cloud host</div>
+                <div class="card-summary">Amazon isn't slowing down on data center spending — but investors don't seem to mind.</div>
+                <a href="https://techcrunch.com/2026/07/30/investors-love-ai-as-long-as-youre-a-cloud-host/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Friend, the lonely AI wearable, returns with a new voice and a much bigger price tag</div>
+                <div class="card-summary">Friend, the AI wearable, can now talk to its users — for an enhanced price.</div>
+                <a href="https://techcrunch.com/2026/07/30/friend-the-lonely-ai-wearable-returns-with-a-new-voice-and-a-much-bigger-price-tag/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI</div>
+                <div class="card-summary">As experts have warned for the last two years, some companies — like Microsoft and now Google — are finding and patching an exponential number of bugs in their products, thanks to the use of LLMs and ...</div>
+                <a href="https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">LinkedIn adds a button to report AI-generated ‘slop’</div>
+                <div class="card-summary">LinkedIn is introducing new ways to reduce low-quality AI-generated posts, including a “seems like AI slop” reporting option. It's also replacing its own AI writing feature with a proofreading tool.</div>
+                <a href="https://techcrunch.com/2026/07/30/linkedin-adds-a-button-to-report-ai-generated-slop/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Meta says AI is making it easier to build new apps — and more are coming</div>
+                <div class="card-summary">Meta says AI is making it dramatically easier to build and launch new consumer apps, with CEO Mark Zuckerberg telling investors the company has more new consumer products on the way.</div>
+                <a href="https://techcrunch.com/2026/07/30/meta-says-ai-is-making-it-easier-to-build-new-apps-and-more-are-coming/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Nscale buys Anyscale as it seeks to own more of the AI compute stack</div>
+                <div class="card-summary">British AI neocloud Nscale is buying software startup Anyscale, which helps companies scale their AI workloads across data centers and servers.</div>
+                <a href="https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Forward-deployed engineers are the AI industry’s latest talent obsession</div>
+                <div class="card-summary">A new study estimates only 2,000 U.S. engineers have the expertise to deliver meaningful AI ROI, as enterprises race to hire forward-deployed engineers to implement AI at scale.</div>
+                <a href="https://techcrunch.com/2026/07/30/forward-deployed-engineers-are-the-ai-industrys-latest-talent-obsession/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Microsoft is openly competing with OpenAI, Anthropic more than ever</div>
+                <div class="card-summary">Microsoft pitched its own homegrown AI models, harnesses, and even a Mythos competitor on Wednesday, telling Wall Street it plans for continued growth.</div>
+                <a href="https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Mark Zuckerberg predicts that billions of people will have personal AI agents in five years</div>
+                <div class="card-summary">As Meta pours billions into AI infrastructure and agents, Zuckerberg is working to convince investors that the payoff will be worth the price.</div>
+                <a href="https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Microsoft logs $3.2B from Anthropic investment, but OpenAI was a mixed bag</div>
+                <div class="card-summary">When Microsoft reported killer fourth-quarter earnings for its fiscal 2026 year (which ended June 30), it tucked in an interesting little tidbit about how its investments in the two biggest, and compe...</div>
+                <a href="https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Zuckerberg says Meta’s enterprise AI opportunity extends beyond agents</div>
+                <div class="card-summary">On the company’s second-quarter earnings call Wednesday, CEO Mark Zuckerberg said Meta sees a “large enterprise opportunity” spanning AI agents, APIs, compute, and internal software.</div>
+                <a href="https://techcrunch.com/2026/07/29/zuckerberg-says-metas-enterprise-ai-opportunity-extends-beyond-agents/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            </div>
+<div class="section"><div class="section-title">Watch Out</div>
+            <div class="card">
+                <div class="card-title">Anthropic says its own AI models breached three companies during security tests</div>
+                <div class="card-summary">After OpenAI's models broke into Hugging Face, Anthropic checked its own history and found three similar incidents</div>
+                <a href="https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Reddit reports a solid quarter but shows signs of AI’s impact</div>
+                <div class="card-summary">Reddit's financial situation is looking good but uncertainty about its relationship to Google and the new AI-ified web are stirring market concerns.</div>
+                <a href="https://techcrunch.com/2026/07/30/reddit-reports-a-solid-quarter-but-shows-signs-of-ais-impact/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Judge says Trump admin still lacks evidence for Anthropic ‘supply-chain risk’ label</div>
+                <div class="card-summary">A federal judge said the Trump administration has not presented enough evidence to justify labeling Anthropic a supply-chain risk, casting doubt on the government's ban on its AI technology.</div>
+                <a href="https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Okta buys AI security startup Permiso — source says for about $200M</div>
+                <div class="card-summary">The deal gives Okta identity threat detection capabilities as enterprises seek to secure AI agents and other non-human identities across cloud environments.</div>
+                <a href="https://techcrunch.com/2026/07/30/okta-buys-ai-security-startup-permiso-source-says-for-about-200m/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">In the Hugging Face breach, OpenAI’s hacker was noisy and fast — but not unstoppable</div>
+                <div class="card-summary">Cybersecurity experts told TechCrunch that one of the biggest lessons to be taken from the OpenAI hack against Hugging Face has nothing to do with AI, but traditional cybersecurity defense.</div>
+                <a href="https://techcrunch.com/2026/07/30/in-the-hugging-face-breach-openais-hacker-was-noisy-and-fast-but-not-unstoppable/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Dili raises $21.7M to bring AI compliance to the infrastructure boom</div>
+                <div class="card-summary">The Series A was led by Khosla Ventures, with participation from Allianz, Rebel Fund, Brick and Mortar Ventures’ Darren Bechtel, and Y Combinator’s Garry Tan.</div>
+                <a href="https://techcrunch.com/2026/07/30/dili-raises-15-million-to-bring-ai-compliance-to-the-infrastructure-boom/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">Discover what’s next for AI, from the SaaS reckoning to the agent security gap, at TechCrunch Disrupt 2026</div>
+                <div class="card-summary">At TechCrunch Disrupt 2026, the AI Stage is back to dig into the single hottest topic in the community for the past few years, presented by Google for Startups.</div>
+                <a href="https://techcrunch.com/2026/07/29/discover-whats-next-for-ai-from-the-saas-reckoning-to-the-agent-security-gap-at-techcrunch-disrupt-2026/" class="card-link" target="_blank">Read more</a>
+                <div class="source">Source: TechCrunch AI</div>
+            </div>
+            </div>
 
 <div class="footer">
   <p>Research compiled by ALEX for Nirman Khaīrnar — NK's Ops</p>
@@ -211,4 +326,3 @@ body {
 </div>
 </body>
 </html>
-
